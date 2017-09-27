@@ -52,12 +52,12 @@
     <header>
         <ul class="nav_menu_bg">
             <a href="#"><li class="active">Home</li></a>
-            <a href="#"><li class="hvr-underline-from-center">MENU1</li></a>
-            <a href="#"><li class="hvr-underline-from-center">MENU2</li></a>
+            <a href="#"><li class="hvr-underline-from-center">Commitee</li></a>
+            <a href="#"><li class="hvr-underline-from-center">Team</li></a>
             <a href="#"><li class="hvr logo" ></li></a>
-            <a href="#"><li class="hvr-underline-from-center">MENU3</li></a>
-            <a href="#"><li class="hvr-underline-from-center">MENU4</li></a>
-            <a href="#"><li class="hvr-underline-from-center">MENU5</li></a>
+            <a href="#"><li class="hvr-underline-from-center">Download Format</li></a>
+            <a href="#"><li class="hvr-underline-from-center">About </li></a>
+            <a href="#"><li class="hvr-underline-from-center">Contact</li></a>
         </ul>   
     </header>
     
@@ -66,29 +66,75 @@
                 
             </div>
     </div>
-    <div id="particles"></div>
 
 
     
     <div class="wrapper">
-        <div class="event_name" >
-                <h1>Technovision 2017</h1>
-                <h3>( A National Level Technical Paper Presentation Event )</h3>
-        </div>
-
-
-
-<!-- 
+        <div id="particles"></div>
+    
+        <div class="event_name_container">
+            <div class="event_name" >
+                    <h1>Technovision 2017</h1>
+                    <h3>( A National Level Technical Paper Presentation Event )</h3>
+            </div>
+        </div>  
+    
         <div class="event_description">
             <div class="row">
-                <div class="col_3"></div>
-                <div class="col_3"></div>
-                <div class="col_3"></div>
+                <div class="col_3">
+                    <div class="header">
+                        <div class="headerIcon">
+                            <i class="fa fa-certificate"></i>
+                        </div>
+                    </div>
+                    <div class="body">
+                            <h1>Organised By</h1>
+                            <h2>Government College Of Engineering, Jalgaon</h2>
+                    </div>
+
+                </div>
+                <div class="col_3">
+                
+                        <div class="body">
+                                <h1></h1>
+                                <h2><button id="register_button">Register Now</button></h2>
+                                <h2><button id="register_button">Topics & Rules</button></h2>
+                                
+                        </div>
+                </div>
+                <div class="col_3">
+                    <div class="header">
+                            <div class="headerIcon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="body">
+                                <h1>Date : </h1>
+                                <h2>12 Octomber, 2017</h2>
+                        </div>
+                </div>
             </div>
-        </div> -->
+
+        </div>
     </div>
-
-
+    <div class="content_area" id="content_area">
+        <div class="about_technovision">
+            <div class="header">
+                <h1>Topics f<span class="blue">or Presentation</span></h1>
+            </div>
+            <div class="topic_block">
+                <h3>Group A :</h3>
+                <div class="block">
+                    <div class="col_30">
+                        
+                    </div>
+                    <div class="col_70">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -134,7 +180,34 @@
             section.className = 'section--purple wow fadeInDown';
             this.parentNode.insertBefore(section, this);
         };
-
+    </script>
+    <script>
+        $(document).ready(function() {
+            function reloader() {
+                var bodyHeight = $('body').height();
+                $('#content_area').css("marginTop",bodyHeight);
+            }
+            reloader();
+            $(window).resize(reloader);
+        });
+    </script>
+    <script >
+        
+          //smooth scrolling effect for anchor tag
+        
+          $(document).ready(function(){
+            $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              } ,1000,function(){
+              window.location.hash = hash;
+              });
+            }
+            });
+          });
     </script>
 </body>
 </html> 
