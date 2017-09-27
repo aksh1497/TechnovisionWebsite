@@ -376,4 +376,21 @@ body div.content_area div.registration_process div.registration_process_block di
     cursor:pointer;
 }
 
-/* styling the guest page */
+
+/* footer styling */
+
+body footer {
+    width:100%;
+
+    text-align:center;
+
+}
+body footer p {
+    background-color:#222;
+    color:#fff;
+    padding:10px;
+    
+}
+body footer ul.navigation_footer {
+    
+}
