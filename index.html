@@ -1,9 +1,13 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Technovision 2k17</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/faviconIcon.ico" />
+    
+    
+    
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Roboto" rel="stylesheet">    
    
@@ -24,13 +28,7 @@
     
     
     <style>
-        body div.wrapper div.event_name h3.subname {
-            color:#fff;
-            font-family:sans-serif;
-            font-weight:normal;   
-            font-size:20px;
-            margin-top:-20px;
-        }
+       
         body div.header h1 {
             font-weight:bold;
         }
@@ -69,15 +67,48 @@
     <header>
         <ul class="nav_menu_bg">
             <a href="#"><li class="active">Home</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Commitee</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Team</li></a>
-            <a href="#"><li class="hvr logo" ></li></a>
-            <a href="#"><li class="hvr-underline-from-center">Download Format</li></a>
-            <a href="#"><li class="hvr-underline-from-center">About </li></a>
-            <a href="#"><li class="hvr-underline-from-center">Contact</li></a>
-        </ul>   
+            <a href="#"><li class="hvr-underline-from-center">Topics</li></a>
+            <a href="#"><li class="hvr-underline-from-center">Prizes</li></a>
+            <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
+            <a href="formats/IEEE_format.docx"><li class="hvr-underline-from-center">Rules</li></a>
+            <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
+            <a href="#"><li class="hvr-underline-from-center">Contact Us</li></a>
+            
+        </ul>  
+        
+        
+       
     </header>
+    <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
+    <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
     
+    <div id="topLogoTechnovision">Technovision</div>
+    <div id="mobile_navigation_menu">
+        <div class="row">
+            <a href="#">Home</a>
+        </div>
+        <div class="row">
+            <a href="#">About</a>
+        </div>
+        <div class="row">
+            <a href="#">Team</a>
+        </div>
+        <div class="row">
+            <a href="#"></a>
+        </div>
+        <div class="row">
+            <a href="#">Download Format</a>
+        </div>
+        <div class="row">
+            <a href="#">Contact</a>
+        </div>
+        
+    
+
+    </div>
+
+
+
     <div id="rellax" class="">
             <div class="blindUp">
                 
@@ -91,14 +122,14 @@
     
         <div class="event_name_container">
             <div class="event_name" >
-                    <h1>Technovision 2017</h1>
-                    <h3 class="subname">( A National Level Technical Paper Presentation Event )</h3>
+                    <h1 id="name">Technovision 2017</h1>
+                    <h3 id="subname">( A National Level Technical Paper Presentation Event )</h3>
             </div>
         </div>  
     
         <div class="event_description">
             <div class="row">
-                <div class="col_3">
+                <div class="col_3 col_1_sm">
                     <div class="header">
                         <div class="headerIcon">
                             <i class="fa fa-certificate"></i>
@@ -110,16 +141,16 @@
                     </div>
 
                 </div>
-                <div class="col_3">
+                <div class="col_3 col_1_sm">
                 
                         <div class="body">
                                 <h1></h1>
-                                <h2><button id="register_button">Register Now</button></h2>
-                                <h2><button id="register_button">Topics & Rules</button></h2>
+                                <h2><button id="register_button">How To Register</button></h2>
+                                <h2><button id="register_button">Download Rules</button></h2>
                                 
                         </div>
                 </div>
-                <div class="col_3">
+                <div class="col_3 col_date_sm">
                     <div class="header">
                             <div class="headerIcon">
                                 <i class="fa fa-calendar"></i>
@@ -127,7 +158,7 @@
                         </div>
                         <div class="body">
                                 <h1>Date : </h1>
-                                <h2>12 Octomber, 2017</h2>
+                                <h2>12<sup>th</sup> October, 2017</h2>
                         </div>
                 </div>
             </div>
@@ -135,6 +166,31 @@
         </div>
     </div>
     <div class="content_area" id="content_area">
+            <div class="about_technovision">
+                    <div class="header">
+                        <h1> About<span class="blue_color"> Technovision</span></h1>
+                    </div>
+                    <div class="rules_and_regulation_block">
+                        <ol>
+                           </ol>
+                        <div class="buttons">
+                            
+                        </div>
+                    </div>
+            </div>
+            <div class="about_technovision">
+                    <div class="header">
+                        <h1> About<span class="blue_color"> GCOEJ</span></h1>
+                    </div>
+                    <div class="rules_and_regulation_block">
+                        <ol>
+                           </ol>
+                        <div class="buttons">
+                            
+                        </div>
+                    </div>
+            </div>
+        
         <div class="about_technovision">
             <div class="header">
                 <h1> Rules an<span class="blue_color">d Regulations</span></h1>
@@ -289,9 +345,35 @@
                 
                 </div>
             </div>
+
+
+
+
             <footer>
+                <div class="row">
+
+                    <div class="col_7">
+
+
+
+                    </div>
+                    <div class="col_3">
+                        
+                        
+                      <a href='http://www.hit-counter-html-code.com'><img src='http://hit-counter-html-code.com/wp-content/themes/customizr/hitcounter/c.php?d=9&id=162751&s=18' border='0' title='Web Design Orange County'></a><br / ><small><a href='http://www.hit-counter-html-code.com' title="Web Design Orange County">Web Design Orange County</a></small></div>
+
+
+
+                    </div>
+                </div>
+                
+
+
 
                 <p> Designed And Developed By Ankush, Bhushan and Rizwan</p>
+                
+                
+                
             </footer>
     </div>
 
@@ -342,12 +424,29 @@
     </script>
     <script>
         $(document).ready(function() {
+            var bodyHeight;
             function reloader() {
-                var bodyHeight = $('body').height();
+               bodyHeight = $('body').height();
                 $('#content_area').css("marginTop",bodyHeight);
             }
             reloader();
             $(window).resize(reloader);
+            $(window).bind("scroll",function() {
+                if($(window).scrollTop() > bodyHeight-100) {
+                    $('header').css("backgroundColor","#222");
+                
+                
+                   
+                
+                }
+                else if($(window).scrollTop() < bodyHeight-50) {
+                    $('header').css("backgroundColor","transparent");
+                    
+                    
+                 }
+
+            });
+            
         });
     </script>
     <script >
@@ -367,6 +466,30 @@
             }
             });
           });
+    </script>
+
+
+    <script>
+    
+        
+        function openNavigation() {
+            
+            var nav= document.getElementById('mobile_navigation_menu');
+            nav.style.display = "inline-block";
+            var opener=document.getElementById('opener');
+            opener.style.display = "none";
+            var closer=document.getElementById('closer');
+            closer.style.display = "inline-block";
+        }
+        function closeNavigation() {
+            
+            var nav= document.getElementById('mobile_navigation_menu');
+            nav.style.display = "none";
+            var opener=document.getElementById('closer');
+            opener.style.display = "none";
+            var closer=document.getElementById('opener');
+            closer.style.display = "inline-block";
+        }
     </script>
 </body>
 </html> 

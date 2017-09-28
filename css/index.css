@@ -4,11 +4,59 @@ body,html{height:100%;max-height:100% !important;}
 /* template end asprazz */
 
 
+
+@media screen and (max-width:1000px) {
+    body {
+        font-size:100%;
+    }
+}
+@media screen and (max-width:500px) {
+    body {
+        font-size:90%;
+    }
+}
+@media screen and (min-width:1100px) {
+    body {
+        font-size:70%;
+    }
+}
+
+span#opener {
+    display:none;
+}
+span#closer {
+    display:none;
+}
+
+
+/* mobile navigation menu */
+div#mobile_navigation_menu {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:5;
+    background-color:rgba(0,0,0,0.9);
+    padding-top:90px;
+    display:none;
+}
+div#mobile_navigation_menu div.row{
+    width:100%;
+    height:50px;
+    text-align:center;
+    
+}
+#listLogoTechnovision {
+   font-size:50px;
+}
+
+
 /* header */
 body header {
     width:100%;
-    height:13%;
-    min-height:70px;
+    height:11%;
+    min-height:60px;
     text-align:center;
     padding-top:20px;
     position:fixed;
@@ -23,6 +71,7 @@ body header ul.nav_menu_bg {
 body header ul.nav_menu_bg li {
     display:inline-block;
     color:white;
+    font-size:1.5em;
     padding:5px 30px 10px 30px;
 }
 body header ul.nav_menu_bg li.logo {
@@ -78,7 +127,7 @@ body div.wrapper div.event_name_container{
 body div.wrapper div.event_name {
     width:50%;
     margin:0 auto;
-    min-height:170px;
+    min-height:200px;
     text-align:center;
 
     /* gradient border */
@@ -124,10 +173,16 @@ body div.wrapper div.event_name h1 {
     color:#fff;    
     width:100%;
     font-family:Cookie;
-    font-size:65px;
+    font-size:90px;
     font-weight:normal
 }
-
+body div.wrapper div.event_name h3#subname {
+    color:#fff;
+    font-family:sans-serif;
+    font-weight:normal;   
+    font-size:2em;
+    margin-top:-20px;
+}
 
 
 body div.event_description {
@@ -375,22 +430,116 @@ body div.content_area div.registration_process div.registration_process_block di
     color:#fff;
     cursor:pointer;
 }
+body div.buttons button {
+    font-size:1.5em;
+}
+
+
 
 
 /* footer styling */
 
 body footer {
     width:100%;
-
+    height:100px;
+    background-color:#222;
     text-align:center;
 
 }
+
 body footer p {
     background-color:#222;
     color:#fff;
     padding:10px;
     
 }
-body footer ul.navigation_footer {
+/* footer block style */
+
+
+footer div.row {
+    width:100%;
+    height:80%;
+}
+footer div.row div.col_7 {
+    width:70%;
+    float:left;
+    background-color:#fff;
+    }
+
+footer div.row div.col_3 {
+    width:30%;
+    float:left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    body ul.nav_menu_bg  {
+        display:none
+    }
+    body div.event_name h1#name {
+        font-size:2.5em;
+    }
+    body div.wrapper div.event_name {
+        height:20%;
+    }
+    body div.wrapper div.event_description {
+        height:80%;
+        margin-top:-100px;
+    }
+    body div.wrapper div.event_description div.row {
+        height:100%;
+
+    }
+    body div.wrapper div.event_description div.row div.col_1_sm {
+        height:30%;
+    }
+
+    body div.wrapper {
+        padding-top:15%;
+        height:100%;
+    }
+    body div.wrapper div.event_name h3#subname {
+        font-size:1.2em;
+    }
+    span#opener,span#closer {
+        color:#fff;
+        font-size:2em;
+        position:fixed;
+        left:20px;
+        top:20px;
+        z-index:20;
+        display:inline-block;
+    }
+    span#closer{display:none;}
+    span#opener:hover , span#closer {
+        cursor:pointer;
+    }
+    body  div.header h1 {
+        width:80%;
+        margin:0 auto;
+    }        
+
+
+    /* adjusting the info */
+
+    body div.event_description div.row div.col_1_sm {
+        width:100%;
+        float:left;
+    }
+    body div.event_description div.row div.col_date_sm {
+     display:none;   
+    }
+
+    
     
 }
