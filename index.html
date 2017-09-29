@@ -41,7 +41,15 @@
         body header {
             background-color:transparent;
         }
-
+        img#collegeLogo {
+            width:55px;  
+        }
+        div#college_logo_below {
+            margin-top:30px;
+        }
+        div#college_logo_below * {
+            margin:5px;
+        }
     </style>
     <script>
         $(function(){
@@ -69,12 +77,12 @@
     <header>
         <ul class="nav_menu_bg">
             <a href="#"><li class="active">Home</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Topics</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Prizes</li></a>
+            <a href="topics.html"><li class="hvr-underline-from-center">Topics</li></a>
+            <a href="prizes.html"><li class="hvr-underline-from-center">Prizes</li></a>
             <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
             <a href="#rules"><li class="hvr-underline-from-center">Rules</li></a>
             <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
-            <a href="#"><li class="hvr-underline-from-center">Contact Us</li></a>
+            <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
             
         </ul>  
         
@@ -85,6 +93,7 @@
     <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
 
     <span id="importantDatesCloser" onclick="closeImportantDates()"><i class="fa fa-close"></i></span>
+    <span id="contactUsCloser" onclick="closeContactUs()"><i class="fa fa-close"></i></span>
     
     <div id="topLogoTechnovision">Technovision 2k17</div>
 
@@ -122,7 +131,15 @@
         
     
     </div>
-    
+
+    <div id="contactUs" >
+            
+         
+           
+             
+         
+     
+     </div>
 
     <div id="rellax" class="">
             <div class="blindUp">
@@ -147,10 +164,10 @@
                 <div class="col_3 col_org_sm">
                     <div class="header">
                         <div class="headerIcon">
-                            <i class="fa fa-certificate"></i>
+                            <i class=""><img src="img/college.png" id="collegeLogo"/></i>
                         </div>
                     </div>
-                    <div class="body">
+                    <div class="body" id="college_logo_below">
                             <h1>Organised By</h1>
                             <h2 >Government College Of Engineering, Jalgaon</h2>
                     </div>
@@ -186,23 +203,38 @@
                         <h1> About<span class="blue_color"> Technovision</span></h1>
                     </div>
                     <div class="rules_and_regulation_block about_gcoej_text">
-                            <p>Technoarena is a national level technical fest organised by the Govt. College of Engineering, Jalgaon every year. This gives a platform to the student of the institute to explore their talents in the various fields. It also provides a platform where the students can can show their managerial skills.
-                                    
-                                    Technoarena is great platform for the students of various institutes to show their technical skills by participating in the various technical events held here.
+                            <p>
+                                TECHNOVISION is a national level paper presentation competition conducted by Govt. College Of Engineering, Jalgaon. 
+                                Conceptualized in 2015,
+                                Technovision provides a platform to students pursuing engineering studies to showcase their technical research and 
+                                presentation skills on a national stage. 
+
+
                             </p>
                     </div>
             </div>
             <div class="about_technovision">
-                    <div class="header" id="rules">
+                    <div class="header" >
                         <h1> About<span class="blue_color"> GCOEJ</span></h1>
                     </div>
                     <div class="rules_and_regulation_block about_gcoej_text" >
                         <p>Government College Of Engineering, Jalgaon is an autonomous institute of Government of Maharashtra. 
-                            It is one of the well-known college of the region. 
+                            It is one of the well-known college of the region.
+
                             It is the only autonomous institute of engineering in the 
+                            
                             North Maharashtra University
+                            <br/>
+                            <b>Vision : </b> Globally Accepted Engineers with Human Skills
                         </p>
-                    </div>
+                        <div class="buttons" >
+                            <a href="http://gcoej.ac.in" target="_blank" style="margin:0 auto"><button id="format">College Website</button></a>
+                        </div>
+                        <div id="rules"></div>
+                    </div >
+                    
+
+                    
             </div>
         
         <div class="about_technovision">
@@ -210,22 +242,75 @@
                 <h1> Rules and<span class="blue_color"> Regulations</span></h1>
             </div>
             <div class="rules_and_regulation_block">
+                
+                
                 <ol>
-                    <li>Diploma, U.G. and P.G. students can participate in the event.</li>
-                    <li>Maximum 3 authors per paper can participate in the event.</li>
+                    <li>Maximum 3 authors are allowed per Paper. </li>
                     <li>Theme of the paper shall be technology based and it is not limited to themes mentioned on the poster.</li>
-                    <li>Paper should not exceed 08 pages. Paper must be in IEEE format. (Paper should be essentially in a two column format; Font Style: Times New Roman; Font Size: 12; Headings: Bold and font size 14; Spacing: 1.5 )</li>
-                    <li>Last date for submission of Abstract/full length paper on the registered E-mail id is 6th October,2017. Mention your contact details along with it.</li>
-                    <li>Students are requested to send their paper on the following email-id : contact.technovision@gcoej.ac.in</li>
-                    <li>Processing fees at the time of abstract submission is Rs.50 (non-refundable) and after the paper has  been selected, corresponding team has to pay Rs.300. Total fees per paper is Rs.350. </li>
-                    <li>Inauguration will start at 9 a.m. Every participant is expected to reach the venue before   the inaugural function. Bring your college I-Card on event day compulsory.</li>
-                    <li>Each team will get 7 minutes for presentation followed by 3 minutes of question and answer session.</li>
-                    <li>Soft-copies of the submitted paper and PowerPoint presentations must be of MS office 2007-2013.</li>
-                    <li>Certificates shall be given to only those candidates who will present the paper.</li>
-                    <li>For any circumstances, final decision of the organizers and judges will be binding to all. </li>
-                    <li>Every participant has to strictly abide by the rules and regulations made by the institute and any violation of the rules may result in rejection of the paper or cancellation of the registration.</li>
+                    <li>Abstract should not exceed more than one page and Paper should not exceed 10 pages. Paper should be in IEEE format.</li>
+                    <ul style="margin-left:50px;">
+                            <li >Two column format </li>
+                            <li >Font style: Times New Roman</li>
+                            <li >Font Size: 12</li>
+                            <li >Heading: Bold & font size: 14</li>
+                            <li> Spacing: 1.5</li>
+
+                    </ul>
+                    <li>Paper must be preceded by a cover page specifying the title of the paper, names of authors, their college names and their contact numbers with email id.</li>
+                    <li>Paper submitted should be strictly in PDF Format. Please bring your Powerpoint presentation in a pen drive.</li>
+                    <li>Papers without payment of processing fees will not be considered and entertained.</li>
+                    <li id="rulesEmail">Eligibility of participation and submitting paper shall be from Engg. stream diploma, UG & PG of all branches.</li>
+                    <li >Last Date of submission of ABSTRACT of paper to be submit along with processing fees receipt scan/photo on registered email is till 3:00 PM on 
+                            <b>06th OCTOBER 2017</b>. <i>(No late submissions will be entertained)</i></li>
+                    <li>Email for submission : <b> contact.technovision@gcoej.ac.in </b></li>
+                    <li>The mail should contain :</li>
+                    <ul style="margin-left:50px;">
+                            <li > Subject of Email –“ABSTRACT/PAPER FOR TECHNOVISION 2K17” </li>
+                            <li > SCAN/PHOTO COPY OF PROCESSING FEES RECEIPT.</li>
+                            <li > Title – theme of paper</li>
+                            <li > Name(s) of author(s).</li>
+                            <li>  Phone number of all author(s)</li>
+                            <li>  College Name</li>
+
+                    </ul>
+                    <li>Final list of shortlisted papers will be displayed on website by 09 October 2017</li>
+                    <li>Participant required to produce college I-Card & processing fee receipt at the time of event.</li>
+                    <li>All teams and their respective members should report the registration desk before <b>8.00 am</b> on day of event. Submit<b> 3 hard copies </b> of the shortlisted paper on the day of the event at registration desk.</li>
+                    <li>The teams will get <b> 8 minutes for presentation and 2 minutes for conclusion</b> followed by a Q&A session.</li>
                 </ol>
-                <div class="buttons" id="registration">
+
+                <div class="buttons rules_button">
+                    <button id=""class="traveling_allowance-active hvr-bubble-bottom hvr-bubble-bottom-active" onclick="settaRules()">Traveling Allowance Rules</button>
+                    <button id="">Accomoadation Allowance Rules</button>
+                </div>
+
+                <div class="ta_rules" id="ta_rules">
+                    
+                    <ol>
+                       
+                        <li>One side Fare for OUT OF North Maharashtra University Participant.</li>
+                        <li>To & fro fare for OUT of Maharashtra Participant.</li>
+                        <li>Participants will be paid fare of only Railway sleeper class (SL II) and State transport Bus. Fare for any other mode of transport shall be entitled as per government institution norms and regulations.</li>
+                        <li>Railway fare will be calculate from nearest Railway station of Participant’s College to Jalgaon Railway station.</li>
+                        <li>State transport bus fare will be calculated from nearest bus depot of Participant’s College to Jalgaon bus depot.</li>
+                        <li>Participant has to produce original travel ticket without which no fare will be pay.</li>
+                        <li>All rights reserved with organising committee.</li>
+                    
+                    </ol>
+                
+                </div>                
+                <div class="accomadation_rules" id="accomodation_rules">
+                    <ol>
+                            <li> Accomodation Rules </li>
+                            <li>Accomadation will be provided during TECHNOVISION 2k17 in college campus. </li>
+                            
+                            <li>Accommodation will be on first come first serve rule and shared basis. </li>
+                            <li>Accommodation will be provided from <b> 18:00 on 11-10-2017 to 18:00 on 12-10-2017 </b>.</li>
+                            <li>Hospitality will include accommodation in student hostel, dinner on 11th October 2017.</li>
+                            <li>A nominal fees of Rs. 150/- will be charged for accommodation.</li>
+                    </ol>
+                </div>
+                <div class="buttons" id="registration" >
                     
                     <a href="formats/IEEE_format.docx"><button id="format">IEEE Paper Template</button></a>
                 </div>
@@ -238,12 +323,11 @@
                 <div class="registration_process_block">
                     <ol>
                             <li>Pay Processing fees of Rs. 50/- (Compulsory, Non-Refundable) for Abstract submission on given payment details below.</li>
-                            <li>Send your Abstract/Full length Paper and Scanned copy of Receipt along with following details on the E-mail contact.technovision@gcoej.ac.in</li>
-                            <ul><li> Name, Year and Branch of study, college Name, Phone​​</li></ul>
+                            <li>Send your Abstract/Full length Paper and Scanned copy of Receipt along with details as mentioned in <a href="#rulesEmail">General Rules</a> on the E-mail <b> contact.technovision@gcoej.ac.in</b></li>
+                            
                 
                             <li>After Acceptance of Abstract/Paper, ​Pay the Registration Fees of Rs. 300/-(Non - refundable)</li>
                 
-                            <li>Produce the Receipt of Registration fees Payment at Registration Desk on day of Event.</li>
                 
                             <li>Fees can be paid online at the details given below​</li>
                             <ul>
@@ -258,12 +342,11 @@
                                 <li> Full length paper submission : 6th October,2017</li>
                                 <li> Acceptance, revision & Notification : 09th October,2017</li>
                                 <li> Display of Presentation schedule : 10th October,2017</li>
-                                <li> Paper submission Email : contact.technovision@gcoej.ac.in</li>
                             </ul>
                         </ol>
                     <div class="buttons">
-                        <button id="register">Register Now</button>
-                        <button id="contact">Contact Us</button>
+                        
+                        <button id="contact" onclick="showContactUs()">Contact Us</button>
                     </div>
                 </div>
             </div>
@@ -452,12 +535,17 @@
 
                 if($(window).scrollTop() > bodyHeight-100) {
                     $('header').css("backgroundColor","#222");
+                    $('#topLogoTechnovision').css('display','inline-block');
                     $('#topLogoTechnovision').css('opacity','1');
+                    
+                    $('#topLogoTechnovision').css('zIndex',"10");
                     
                 }
                 else if($(window).scrollTop() < bodyHeight-50) {
                     $('header').css("backgroundColor","transparent");
                     $('#topLogoTechnovision').css('opacity','0');
+                    
+                    $('#topLogoTechnovision').css('display','none');
 
                  }
 
@@ -481,50 +569,15 @@
               });
             }
             });
+
+
+            
           });
     </script>
 
 
-    <script>
+    <script src="js/functions_included.js">
     
-        
-        function openNavigation() {
-            
-            var nav= document.getElementById('mobile_navigation_menu');
-            nav.style.display = "inline-block";
-            var opener=document.getElementById('opener');
-            opener.style.display = "none";
-            var closer=document.getElementById('closer');
-            closer.style.display = "inline-block";
-        }
-        function closeNavigation() {
-            
-            var nav= document.getElementById('mobile_navigation_menu');
-            nav.style.display = "none";
-            var opener=document.getElementById('closer');
-            opener.style.display = "none";
-            var closer=document.getElementById('opener');
-            closer.style.display = "inline-block";
-        }
-        function showImportantDates() {
-            var dates = document.getElementById('importantDates');
-            dates.style.display="block";
-            var openerHider = document.getElementById('opener');
-            openerHider.style.display = "none";
-            var closer = document.getElementById('importantDatesCloser');
-            closer.style.display = "block"; 
-
-        }
-        function closeImportantDates() {
-            var dates = document.getElementById('importantDates');
-            dates.style.display="none";
-            var closer = document.getElementById('importantDatesCloser');
-            closer.style.display = "none";
-            var openerHider = document.getElementById('opener');
-            openerHider.style.display = "block";
-        }
-
-
     </script>
 </body>
 </html> 

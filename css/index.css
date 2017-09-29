@@ -48,18 +48,16 @@ div#mobile_navigation_menu div.row{
     
 }
 div#topLogoTechnovision {
-    font-size:3em;
+    font-size:3.4em;
     color:#fff;
     margin:0 auto;
     position:fixed;
      margin:0 auto;
-    width:100%;
-    top:20px;
-    left:0;
+    top:10px;
+    left:42%;
     text-align:center;
     height:60px;
     font-family:"Cookie","sans-serif";
-
     opacity:0;
 }
 
@@ -79,6 +77,8 @@ body header {
 }
 body header ul.nav_menu_bg {
     list-style-type:none;
+    position:relative;
+    z-index:20;
 }
 body header ul.nav_menu_bg li {
     display:inline-block;
@@ -372,8 +372,8 @@ span.blue_color {
 
 body div.about_gcoej_text {
     width:100%;
-    padding:20px;
-    padding-bottom:30px;
+    padding:;
+    padding-bottom:70px;
 }
 body div.about_gcoej_text p {
     width:80%;
@@ -390,12 +390,23 @@ body div.content_area div.about_technovision div.rules_and_regulation_block {
     margin:0 auto;
     width:60%;
 }
+body div.content_area div.about_technovision div.about_gcoej_text {
+    width:90%;
+}
 body div.content_area div.about_technovision div.rules_and_regulation_block ol li {
     margin-top:5px;
     font-size:16px;
     margin-top:10px;
     font-family:sans-serif;
 }
+body div.content_area div.about_technovision div.rules_and_regulation_block ol ul {
+}
+body div.content_area div.about_technovision div.rules_and_regulation_block ol ul li {
+    margin-top:0px;
+    list-style-type:circle;
+
+}
+    
 body div.content_area div.about_technovision div.rules_and_regulation_block div.buttons {
     width:100%;
     text-align:center;
@@ -407,12 +418,17 @@ body div.content_area div.about_technovision div.rules_and_regulation_block div.
     background-color:transparent;
 
     font-family:sans-serif;
-    padding:10px 40px;
+    padding:5px 40px;
     border-radius:10px;
     margin-left:30px;
     min-width:170px;
     color:rgba(23,122,166);
 }
+body div.content_area div.about_technovision div.rules_and_regulation_block div.buttons button.traveling_allowance-active {
+    background-color:rgb(23,122,166);
+    color:#fff;
+}
+    
 body div.content_area div.about_technovision div.rules_and_regulation_block div.buttons button:hover {
     background-color:rgb(23,122,166);
     color:#fff;
@@ -467,6 +483,16 @@ body div.buttons button {
 
 
 
+
+/* buttons for rules */
+div.rules_button button.active {
+
+    background-color:rgb(23,122,166);
+}
+
+
+
+
 /* footer styling */
 
 body footer {
@@ -515,6 +541,32 @@ span#importantDatesCloser {
     display:none;
 }
 
+div#contactUs {
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:10;
+    top:0; left:0;
+    background-color:rgba(0,0,0,0.9);
+    display:none;
+}
+span#contactUsCloser {
+    color:#fff;
+    font-size:2.4em;
+    position:fixed;
+    left:20px;
+    top:20px;
+    z-index:20;
+    display:inline-block;
+
+}
+span#contactUsCloser {
+    display:none;
+}
+span#contactUsCloser:hover {
+    transform:scale(1.1);
+    cursor:pointer;
+}
 
 
 
@@ -546,7 +598,7 @@ span#importantDatesCloser {
     body div.wrapper div.event_description div.row div.col_1_sm {
        
     }
-
+    
     body div.wrapper {
         padding-top:20%;
         height:100%;

@@ -66,15 +66,36 @@
 </script>
 </head>
 <body>
+
+
+        <div id="importantDates" >
+                
+             
+               
+                 
+             
+         
+         </div>
+     
+         <div id="contactUs" >
+                 
+              
+                
+                  
+              
+          
+          </div>
+
+
     <header>
         <ul class="nav_menu_bg nav_black">
-            <a href="#"><li class="active">Home</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Topics</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Prizes</li></a>
+            <a href="index.html"><li class="hvr-underline-from-center ">Home</li></a>
+            <a href="#"><li class="active">Topics</li></a>
+            <a href="prizes.html"><li class="hvr-underline-from-center">Prizes</li></a>
             <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
-            <a href="formats/IEEE_format.docx"><li class="hvr-underline-from-center">Rules</li></a>
+            <a href="/index.html#rules?"><li class="hvr-underline-from-center">Rules</li></a>
             <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
-            <a href="#"><li class="hvr-underline-from-center">Contact Us</li></a>
+            <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
             
         </ul>  
         
@@ -83,17 +104,18 @@
     </header>
     <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
     <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
-    
+    <span id="importantDatesCloser" onclick="closeImportantDates()"><i class="fa fa-close"></i></span>
+    <span id="contactUsCloser" onclick="closeContactUs()"><i class="fa fa-close"></i></span>
     <!--<div id="topLogoTechnovision">Technovision</div>-->
     <div id="mobile_navigation_menu">
         <div class="row">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
         </div>
         <div class="row">
-            <a href="#">About</a>
+            <a href="topics.html">Topics</a>
         </div>
         <div class="row">
-            <a href="#">Team</a>
+            <a href="prizes">Prizes</a>
         </div>
         <div class="row">
             <a href="#"></a>
@@ -406,6 +428,41 @@
             opener.style.display = "none";
             var closer=document.getElementById('opener');
             closer.style.display = "inline-block";
+        }
+        function showImportantDates() {
+            var dates = document.getElementById('importantDates');
+            dates.style.display="block";
+            var openerHider = document.getElementById('opener');
+            openerHider.style.display = "none";
+            var closer = document.getElementById('importantDatesCloser');
+            closer.style.display = "block"; 
+
+        }
+        function closeImportantDates() {
+            var dates = document.getElementById('importantDates');
+            dates.style.display="none";
+            var closer = document.getElementById('importantDatesCloser');
+            closer.style.display = "none";
+            var openerHider = document.getElementById('opener');
+            openerHider.style.display = "block";
+        }
+        function showContactUs() {
+
+            var dates = document.getElementById('contactUs');
+            dates.style.display="block";
+            var openerHider = document.getElementById('opener');
+            openerHider.style.display = "none";
+            var closer = document.getElementById('contactUsCloser');
+            closer.style.display = "block"; 
+
+        }
+        function closeContactUs() {
+            var dates = document.getElementById('contactUs');
+            dates.style.display="none";
+            var closer = document.getElementById('contactUsCloser');
+            closer.style.display = "none";
+            var openerHider = document.getElementById('opener');
+            openerHider.style.display = "block";
         }
     </script>
 </body>
