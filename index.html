@@ -280,8 +280,8 @@
                 </ol>
 
                 <div class="buttons rules_button">
-                    <button id=""class="traveling_allowance-active hvr-bubble-bottom hvr-bubble-bottom-active" onclick="settaRules()">Traveling Allowance Rules</button>
-                    <button id="">Accomoadation Allowance Rules</button>
+                    <button id="extra_rules_buttons_ta"class="" onclick="settaRules()">Traveling Allowance Rules</button>
+                    <button id="extra_rules_buttons_ac" onclick="setaccomodationRules()">Accomoadation Allowance Rules</button>
                 </div>
 
                 <div class="ta_rules" id="ta_rules">
@@ -569,6 +569,10 @@
               });
             }
             });
+
+            $('#ta_rules').css('display',"none");
+            $('#accomodation_rules').css('display',"none");
+
 
 
             
