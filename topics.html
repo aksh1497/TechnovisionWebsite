@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technovision 2k17</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/faviconIcon.ico" />
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Roboto" rel="stylesheet">    
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+    <link rel="stylesheet" type="text/css" href="css/cursor.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/topics.css">
+    
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/typed.js"></script>
+    
+    
+    <style>
+       
+        body div.header h1 {
+            font-weight:bold;
+        }
+        body div.card {
+            box-shadow:none;
+        }
+        body div.card img {
+            transform:scale(0.7);
+        }
+
+
+    </style>
+    <script>
+        $(function(){
+                $("#typed").typed({
+                    // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+                    stringsElement: $('#typed-strings'),
+                    typeSpeed: 20,
+                    backDelay: 500,
+                    loop: true,
+                    contentType: 'html', // or text
+                    // defaults to false for infinite loop
+                    loopCount: false,
+                    callback: function(){ foo(); },
+                    resetCallback: function() { newTyped(); }
+                });
+                $(".reset").click(function(){
+                    $("#typed2").typed('reset');
+                });
+            });
+        function newTyped(){ /* A new typed object */ }
+        function foo(){ console.log("Callback"); }
+</script>
+</head>
+<body>
+    <header>
+        <ul class="nav_menu_bg nav_black">
+            <a href="#"><li class="active">Home</li></a>
+            <a href="#"><li class="hvr-underline-from-center">Topics</li></a>
+            <a href="#"><li class="hvr-underline-from-center">Prizes</li></a>
+            <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
+            <a href="formats/IEEE_format.docx"><li class="hvr-underline-from-center">Rules</li></a>
+            <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
+            <a href="#"><li class="hvr-underline-from-center">Contact Us</li></a>
+            
+        </ul>  
+        
+        
+       
+    </header>
+    <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
+    <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
+    
+    <!--<div id="topLogoTechnovision">Technovision</div>-->
+    <div id="mobile_navigation_menu">
+        <div class="row">
+            <a href="#">Home</a>
+        </div>
+        <div class="row">
+            <a href="#">About</a>
+        </div>
+        <div class="row">
+            <a href="#">Team</a>
+        </div>
+        <div class="row">
+            <a href="#"></a>
+        </div>
+        <div class="row">
+            <a href="#">Download Format</a>
+        </div>
+        <div class="row">
+            <a href="#">Contact</a>
+        </div>
+        
+    
+
+    </div>
+
+
+    <div class="topics-container my-row my-height-50">
+        <div class="my-col-12 flex-center topics-header">
+            <h2 class="text-center">
+                Topics for Presentation
+            </h2>
+        </div>
+    </div>
+    <div class="my-row my-topics-container">
+        <div class="my-col-6">
+            <div class="my-col-12">
+                <h4 class="text-center">
+                    Group A
+                </h4>
+            </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-6 my-bg-01">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-heading " >
+                                Computer Engineering
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-card-body my-col-6">
+                        <ul>
+                            <li>Encryption algorithm</li>
+                            <li>Big Data & Hadoop</li>
+                            <li>Cyber Security & Hacking</li>
+                            <li>Security & threats in Cloud Computing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-6 my-bg-02">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-heading " >
+                                Electrical Engineering
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-card-body my-col-6">
+                        <ul>
+                            <li>Smart Grids</li>
+                            <li>Alternate Energy for Sustainibility</li>
+                            <li>Modern Industrial Drives</li>
+                            <li>Recent Trends in Power System</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-6 my-bg-03">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-heading " >
+                                Instrumentation Engineering
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-card-body my-col-6">
+                        <ul>
+                            <li>Process Control</li>
+                            <li>Biomedical</li>
+                            <li>Neural Fuzzy Control System</li>
+                            <li>Instrumentation & Measurement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-6 my-bg-04">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-heading " >
+                                Electronics & Telecommunication Engineering
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-card-body my-col-6">
+                        <ul>
+                            <li>Signal Processing & Application</li>
+                            <li>Communication</li>
+                            <li>Very Large Scale Integration</li>
+                            <li>Embedded System</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-col-6">
+            <div class="my-col-12">
+                <h4 class="text-center">
+                    Group B
+                </h4>
+            </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-6 my-bg-05">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-heading " >
+                                Mechanical Engineering
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-card-body my-col-6">
+                        <ul>
+                            <li>3D Printing & Scanning</li>
+                            <li>Bio Fuel</li>
+                            <li>TQM (Total Quality Measurement)</li>
+                            <li>Recent trends in Non-Conventional Manufacturing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-6 my-bg-06">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-heading " >
+                                Civil Engineering
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-card-body my-col-6">
+                        <ul>
+                            <li>Infrastructure Development</li>
+                            <li>New Construction Material & Methods</li>
+                            <li>Smart City Development</li>
+                            <li>Interlinking of Rivers & Internal water ways</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-6 my-bg-07">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-heading " >
+                                Applied Science
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-card-body my-col-6">
+                        <ul>
+                            <li>NanoTechnology & Its Application</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+    
+
+            <footer>
+                <div class="row">
+
+                    <div class="col_7">
+
+
+
+                    </div>
+                    <div class="col_3">
+                        
+                        
+                        <div ><a href='http://www.hit-counter-html-code.com'><img src='http://hit-counter-html-code.com/wp-content/themes/customizr/hitcounter/c.php?d=9&id=162751&s=18' border='0' title='Web Design Orange County'></a><br / ><small><a href='http://www.hit-counter-html-code.com' title="Web Design Orange County"></a></small></div>
+
+
+                    </div>
+                </div>
+                
+
+
+
+                <p> Designed And Developed By Ankush, Bhushan and Rizwan</p>
+                
+                
+                
+            </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles.app.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax();
+
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        } ,1500,function(){
+                        window.location.hash = hash;
+                        });
+                    }
+            });
+        });
+        wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+            var section = document.createElement('section');
+            section.className = 'section--purple wow fadeInDown';
+            this.parentNode.insertBefore(section, this);
+        };
+    </script>
+    <script>
+        $(document).ready(function() {
+            var bodyHeight;
+            function reloader() {
+               bodyHeight = $('body').height();
+                $('#content_area').css("marginTop",bodyHeight);
+            }
+            reloader();
+            $(window).resize(reloader);
+            $(window).bind("scroll",function() {
+                if($(window).scrollTop() > bodyHeight-100) {
+                    $('header').css("backgroundColor","#222");
+                
+                
+                    /*$('#listLogoTechnovision').text("Technovision 2017");*/
+                
+                }
+                else if($(window).scrollTop() < bodyHeight-50) {
+                    $('header').css("backgroundColor","#222");
+                   /* $('header').css("backgroundColor","transparent");*/
+                    /*$('#listLogoTechnovision').text("");*/
+                    
+                 }
+
+            });
+            
+        });
+    </script>
+    <script >
+        
+          //smooth scrolling effect for anchor tag
+        
+          $(document).ready(function(){
+            $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              } ,1000,function(){
+              window.location.hash = hash;
+              });
+            }
+            });
+          });
+    </script>
+
+
+    <script>
+    
+        
+        function openNavigation() {
+            
+            var nav= document.getElementById('mobile_navigation_menu');
+            nav.style.display = "inline-block";
+            var opener=document.getElementById('opener');
+            opener.style.display = "none";
+            var closer=document.getElementById('closer');
+            closer.style.display = "inline-block";
+        }
+        function closeNavigation() {
+            
+            var nav= document.getElementById('mobile_navigation_menu');
+            nav.style.display = "none";
+            var opener=document.getElementById('closer');
+            opener.style.display = "none";
+            var closer=document.getElementById('opener');
+            closer.style.display = "inline-block";
+        }
+    </script>
+</body>
+</html> 

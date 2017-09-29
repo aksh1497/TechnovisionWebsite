@@ -3,11 +3,30 @@
 /* ----------------------------------------------- */
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-console.log("inapp");
-particlesJS.load('particles', 'particlesjs-config.json', function() {
-  console.log('particles.js loaded - callback');
-});
 
+  
+
+var deviceWidth = screen.width;
+
+if(deviceWidth > 600 ) {
+
+
+  //alert("desktop");
+  particlesJS.load('particles', 'particlesjs-config.json', function() {
+    console.log('particles.js loaded - callback');
+  });
+
+}
+else {
+
+  alert("Mobiile");
+
+
+  particlesJS.load('particles', 'particlesjs-config_mobile.json', function() {
+    console.log('particles.js loaded - callback');
+  });
+
+}
 
 /* Otherwise just put the config content (json): 
 

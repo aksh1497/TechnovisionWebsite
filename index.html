@@ -38,7 +38,9 @@
         body div.card img {
             transform:scale(0.7);
         }
-
+        body header {
+            background-color:transparent;
+        }
 
     </style>
     <script>
@@ -70,7 +72,7 @@
             <a href="#"><li class="hvr-underline-from-center">Topics</li></a>
             <a href="#"><li class="hvr-underline-from-center">Prizes</li></a>
             <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
-            <a href="formats/IEEE_format.docx"><li class="hvr-underline-from-center">Rules</li></a>
+            <a href="#rules"><li class="hvr-underline-from-center">Rules</li></a>
             <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
             <a href="#"><li class="hvr-underline-from-center">Contact Us</li></a>
             
@@ -81,20 +83,25 @@
     </header>
     <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
     <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
+
+    <span id="importantDatesCloser" onclick="closeImportantDates()"><i class="fa fa-close"></i></span>
     
-    <div id="topLogoTechnovision">Technovision</div>
-    <div id="mobile_navigation_menu">
+    <div id="topLogoTechnovision">Technovision 2k17</div>
+
+
+    
+    <div id="mobile_navigation_menu" >
         <div class="row">
             <a href="#">Home</a>
         </div>
         <div class="row">
-            <a href="#">About</a>
+            <a href="#">Topics</a>
         </div>
         <div class="row">
-            <a href="#">Team</a>
+            <a href="#">Prizes</a>
         </div>
         <div class="row">
-            <a href="#"></a>
+            <a href="#rules">Rules</a>
         </div>
         <div class="row">
             <a href="#">Download Format</a>
@@ -107,7 +114,15 @@
 
     </div>
 
-
+    <div id="importantDates" >
+           
+        
+          
+            
+        
+    
+    </div>
+    
 
     <div id="rellax" class="">
             <div class="blindUp">
@@ -129,7 +144,7 @@
     
         <div class="event_description">
             <div class="row">
-                <div class="col_3 col_1_sm">
+                <div class="col_3 col_org_sm">
                     <div class="header">
                         <div class="headerIcon">
                             <i class="fa fa-certificate"></i>
@@ -145,20 +160,20 @@
                 
                         <div class="body">
                                 <h1></h1>
-                                <h2><button id="register_button">How To Register</button></h2>
-                                <h2><button id="register_button">Download Rules</button></h2>
+                                <a href="#registration"><h2><button id="register_button">How To Register</button></h2></a>
+                                <a href="#pdffile"><h2><button id="register_button">Download Rules</button></h2></a>
                                 
                         </div>
                 </div>
-                <div class="col_3 col_date_sm">
+                <div class="col_3 col_1_sm">
                     <div class="header">
                             <div class="headerIcon">
                                 <i class="fa fa-calendar"></i>
                             </div>
                         </div>
                         <div class="body">
-                                <h1>Date : </h1>
-                                <h2>12<sup>th</sup> October, 2017</h2>
+                                <h2>On 12<sup>th</sup> October, 2017</h2>
+                                <h2><button id="register_button" onclick="showImportantDates()">Important Dates</button></h2>                                
                         </div>
                 </div>
             </div>
@@ -166,34 +181,33 @@
         </div>
     </div>
     <div class="content_area" id="content_area">
-            <div class="about_technovision">
+            <div class="about_technovision" id="about">
                     <div class="header">
                         <h1> About<span class="blue_color"> Technovision</span></h1>
                     </div>
-                    <div class="rules_and_regulation_block">
-                        <ol>
-                           </ol>
-                        <div class="buttons">
-                            
-                        </div>
+                    <div class="rules_and_regulation_block about_gcoej_text">
+                            <p>Technoarena is a national level technical fest organised by the Govt. College of Engineering, Jalgaon every year. This gives a platform to the student of the institute to explore their talents in the various fields. It also provides a platform where the students can can show their managerial skills.
+                                    
+                                    Technoarena is great platform for the students of various institutes to show their technical skills by participating in the various technical events held here.
+                            </p>
                     </div>
             </div>
             <div class="about_technovision">
-                    <div class="header">
+                    <div class="header" id="rules">
                         <h1> About<span class="blue_color"> GCOEJ</span></h1>
                     </div>
-                    <div class="rules_and_regulation_block">
-                        <ol>
-                           </ol>
-                        <div class="buttons">
-                            
-                        </div>
+                    <div class="rules_and_regulation_block about_gcoej_text" >
+                        <p>Government College Of Engineering, Jalgaon is an autonomous institute of Government of Maharashtra. 
+                            It is one of the well-known college of the region. 
+                            It is the only autonomous institute of engineering in the 
+                            North Maharashtra University
+                        </p>
                     </div>
             </div>
         
         <div class="about_technovision">
-            <div class="header">
-                <h1> Rules an<span class="blue_color">d Regulations</span></h1>
+            <div class="header" >
+                <h1> Rules and<span class="blue_color"> Regulations</span></h1>
             </div>
             <div class="rules_and_regulation_block">
                 <ol>
@@ -211,13 +225,13 @@
                     <li>For any circumstances, final decision of the organizers and judges will be binding to all. </li>
                     <li>Every participant has to strictly abide by the rules and regulations made by the institute and any violation of the rules may result in rejection of the paper or cancellation of the registration.</li>
                 </ol>
-                <div class="buttons">
-                    <button id="register">Topics</button>
-                    <a href="formats/IEEE_format.docx"><button id="format">IEEE Paper Format</button></a>
+                <div class="buttons" id="registration">
+                    
+                    <a href="formats/IEEE_format.docx"><button id="format">IEEE Paper Template</button></a>
                 </div>
             </div>
         </div>
-        <div class="registration_process">
+        <div class="registration_process" >
                 <div class="header">
                     <h1> Registration <span class="blue_color">Process</span></h1>
                 </div>
@@ -233,10 +247,10 @@
                 
                             <li>Fees can be paid online at the details given below​</li>
                             <ul>
-                                <li> Principal Government college of engineering, Jalgaon​</li>
-                                <li> Bank Name: State Bank of India, Jalgaon</li>
-                                <li> A/c No : 30412214004</li>
-                                <li> IFSC No. : SBIN0000393​</li>
+                                <li style="font-size:1.5em;font-weight:bold;"> <q> <b>Principal Government college of engineering, Jalgaon </b></q>​</li>
+                                <li style="font-size:1.5em;font-weight:bold;"> &nbsp;&nbsp;Bank Name: State Bank of India, Jalgaon</li>
+                                <li style="font-size:1.5em;font-weight:bold;"> &nbsp;&nbsp;A/c No : 30412214004</li>
+                                <li style="font-size:1.5em;font-weight:bold;"> &nbsp;&nbsp;IFSC No. : SBIN0000393​</li>
                             </ul>
                 
                             <li>Important dates</li>
@@ -254,7 +268,7 @@
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container" id="patrons">
                 <div class="section">
                     <!--   Chief Patron Section   -->
                     <div class="row center">
@@ -348,6 +362,9 @@
 
 
 
+            
+
+
 
             <footer>
                 <div class="row">
@@ -360,7 +377,7 @@
                     <div class="col_3">
                         
                         
-                      <a href='http://www.hit-counter-html-code.com'><img src='http://hit-counter-html-code.com/wp-content/themes/customizr/hitcounter/c.php?d=9&id=162751&s=18' border='0' title='Web Design Orange County'></a><br / ><small><a href='http://www.hit-counter-html-code.com' title="Web Design Orange County">Web Design Orange County</a></small></div>
+                    <a href='http://www.hit-counter-html-code.com'><img src='http://hit-counter-html-code.com/wp-content/themes/customizr/hitcounter/c.php?d=9&id=162751&s=18' border='0' title='Web Design Orange County'></a><br / >
 
 
 
@@ -370,11 +387,14 @@
 
 
 
-                <p> Designed And Developed By Ankush, Bhushan and Rizwan</p>
+                <p > Designed And Developed By Ankush, Bhushan and Rizwan Under <a href="http://sdc.gcoej.ac.in">SDC</a></a></p>
                 
                 
                 
             </footer>
+
+
+
     </div>
 
 
@@ -416,11 +436,7 @@
         }
         );
         wow.init();
-        document.getElementById('moar').onclick = function() {
-            var section = document.createElement('section');
-            section.className = 'section--purple wow fadeInDown';
-            this.parentNode.insertBefore(section, this);
-        };
+        
     </script>
     <script>
         $(document).ready(function() {
@@ -432,17 +448,17 @@
             reloader();
             $(window).resize(reloader);
             $(window).bind("scroll",function() {
+               
+
                 if($(window).scrollTop() > bodyHeight-100) {
                     $('header').css("backgroundColor","#222");
-                
-                
-                   
-                
+                    $('#topLogoTechnovision').css('opacity','1');
+                    
                 }
                 else if($(window).scrollTop() < bodyHeight-50) {
                     $('header').css("backgroundColor","transparent");
-                    
-                    
+                    $('#topLogoTechnovision').css('opacity','0');
+
                  }
 
             });
@@ -490,6 +506,25 @@
             var closer=document.getElementById('opener');
             closer.style.display = "inline-block";
         }
+        function showImportantDates() {
+            var dates = document.getElementById('importantDates');
+            dates.style.display="block";
+            var openerHider = document.getElementById('opener');
+            openerHider.style.display = "none";
+            var closer = document.getElementById('importantDatesCloser');
+            closer.style.display = "block"; 
+
+        }
+        function closeImportantDates() {
+            var dates = document.getElementById('importantDates');
+            dates.style.display="none";
+            var closer = document.getElementById('importantDatesCloser');
+            closer.style.display = "none";
+            var openerHider = document.getElementById('opener');
+            openerHider.style.display = "block";
+        }
+
+
     </script>
 </body>
 </html> 
