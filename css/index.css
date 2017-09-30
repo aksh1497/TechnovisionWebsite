@@ -60,7 +60,6 @@ div#topLogoTechnovision {
     font-family:"Cookie","sans-serif";
     opacity:0;
 }
-
 /* header */
 body header {
     width:100%;
@@ -488,7 +487,7 @@ body div.buttons button {
 div.rules_button button.active {
 
     background-color:rgb(23,122,166);
-}
+}  
 
 
 
@@ -507,8 +506,27 @@ body footer p {
     background-color:#222;
     color:#fff;
     padding:10px;
-    
+    font-size:20px;
 }
+
+body footer div.row {
+    width:100%;
+
+}
+body footer div.row div.col_7 {
+    width:70%;
+    float:left;
+}
+body footer a#counter {
+    margin:10px;
+}
+
+
+
+
+
+
+
 /* footer block style */
 
 h5#infoExtraOn {
@@ -559,19 +577,21 @@ div#importantDates div.header {
 }
 
 div#importantDates div.body {
-    width:50%;
+    width:75%;
     color:#fff;
     margin:0 auto;
+
+
 }
 
 div#importantDates div.body h1 {
-    font-size:1.8em;
+    font-size:2.2em;
 }
 
 
 
 /*
-div#importantDates table {
+div#importantDates table     {
     width:50%;
     margin:0 auto;
     color:#000;
@@ -632,7 +652,7 @@ div#contactUs {
     position:fixed;
     z-index:10;
     top:0; left:0;
-    background-color:rgba(0,0,0,0.9);
+    background-color:rgba(0,0,0,0.96);
     display:none;
 }
 span#contactUsCloser {
@@ -653,14 +673,9 @@ span#contactUsCloser:hover {
     cursor:pointer;
 }
 div#importantDates div.header {
-    margin-top:500px;
+    
 }
 
-div#contactUs div.body {
-    width:50%;
-    color:#fff;
-    margin:0 auto;
-}
 
 div#contactUs div.body h1 {
     font-size:1.8em;

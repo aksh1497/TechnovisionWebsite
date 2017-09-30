@@ -19,7 +19,7 @@ if(deviceWidth > 600 ) {
 }
 else {
 
-  alert("Mobiile");
+  
 
 
   particlesJS.load('particles', 'particlesjs-config_mobile.json', function() {

@@ -1,7 +1,99 @@
+ div#contactUs div.header {
+     height:20%;
+ }
+ div#contactUs div.body {
+        width:100%;
+        height:80%;
+        color:#fff;
+        margin:0 auto;
+    }
+
+div#contactUs div.body div.row_contact_us {
+    width:100%;
+    height:100%;
+    
+}
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs {
+    padding-top:50px;
+    width:50%;
+    float:left;
+    padding-left:20px;
+}
+
+
+
+
+
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs table#table_for_contact tr *{
+    text-align:justify;
+    font-size:15px;
+}
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs table#table_for_contact tr:hover{
+    background-color:rgba(255,255,255,0.1);
+}
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs table#table_for_contact tr th {
+    color:rgba(23,122,166,1);
+
+}
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs table#table_for_contact tr th {
+    
+}
+
+ div#contactUs div.body div.row_contact_us div.columnHalfContactUs table#table_for_contact tr td {
+    text-align:center;
+}
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs table#table_for_contact tr:nth-child(odd){
+    background-color:rgba(255,255,255,0.031);
+    
+}
+
+
+
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs table#table_for_contact th {
+    font-size:18px;
+    text-align:center;
+}
+
+
+/* styling up the forms */
+
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs div.row_one {
+    text-align:center;
+    margin:0 auto;
+    height:50%;
+    width:90%;
+
+}
+
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs div.row_two {
+    width:80%;
+    margin:0 auto;
+}    
+div#contactUs div.body div.row_contact_us div.columnHalfContactUs div.row_two h2 {
+    font-size:20px;   
+
+}
+
+
+
+
+
+
 @media screen and (max-width:600px) {
 
-    
-
+    div#doNotDisplay {
+        display:none;
+    }
+    div#smallDisplayContact {
+        width:100%;
+        margin:0 auto;
+    }
+    div#importantDatesForSmallScreen{ 
+        font-size:10px;
+    }
+    div#topLogoTechnovision {
+        left:25%;
+    }
 
 
 

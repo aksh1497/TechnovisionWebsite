@@ -22,6 +22,7 @@
     
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/prizes.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile_index.css">
     
     
     <script src="js/jquery.min.js"></script>
@@ -89,21 +90,68 @@
  </div>
 
  <div id="contactUs" >
-     <div class="row" style="padding-top:50px">
-         <div class="header">
-             <h1 style="color:white;">Important Dates :</h1>
-         </div>
-         <div class="body">
-             <h1> Pranjal Upadhyay :-  8149901151</h1>
-             <h1> Sachchak Waghmare :- 7620558850</h1>
-         </div>
-     </div>
-      
-        
-          
-      
-  
-  </div>
+        <div class="row" style="padding-top:50px">
+            <div class="header">
+                <h1 style="color:white;">Contact Us :</h1>
+            </div>
+            <div class="body">
+    
+                <div class="row_contact_us">
+                    <div class="columnHalfContactUs" id="smallDisplayContact">
+                        <table id="table_for_contact">
+                            <tr>
+                                <th>Name </th>
+                                <th>Designation</th>
+                                <th>Contact No.</th>
+                            </tr>
+                            <tr>
+                                <td>Pranjal A. Upadhyay</td>
+                                <td>Convenor </td>
+                                <td>8149901151</td>
+                            </tr>   
+                            <tr>
+                                    <td>Sachchak Waghmare</td>
+                                    <td>Co-Convenor </td>
+                                    <td>7620558850</td>
+                            </tr>
+                            <tr>
+                                    <td> Sachin Udas</td>
+                                    <td>Group A Co-ordinator</td>
+                                    <td>9923355994</td>
+                            </tr>
+                            <tr>
+                                    <td>Vipul Bankar</td>
+                                    <td>Group B Co-ordinator</td>
+                                    <td>8087367115</td>
+                            </tr>
+                            <tr>
+                                    <td>Rushikesh Potale</td>
+                                    <td>Hospitality<br/>(Boys)</td>
+                                    <td>8421314411</td>
+                            </tr>
+                            <tr>
+                                    <td>Anuja Momle</td>
+                                    <td>Hospitality<br/>(Girls)</td>
+                                    <td>9168234344</td>
+                            </tr>
+    
+                        </table>
+                    </div>
+                    <div class="columnHalfContactUs" id="doNotDisplay">
+                        
+                                        <div class="row_one">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7457468286448!2d75.54658771493219!3d21.002826586012358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fc9945a06b3%3A0x2adbed89161ccac2!2sGovernment+College+of+Engineering!5e0!3m2!1sen!2sin!4v1506286742665" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <div class="row_two">
+                                            <h1>Address :</h1> 
+                                        <h2>Opp. DIC office, National Highway 6, Jalgoan 425002</h2>
+                                        </div>
+                            </div> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
                 
                   
               
@@ -116,7 +164,7 @@
             <a href="prizes.html"><li class="active">Prizes</li></a>
             <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
             <a href="index.html#rules"><li class="hvr-underline-from-center">Rules</li></a>
-            <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
+            <a href="committee.html"><li class="hvr-underline-from-center">Team </li></a>
             <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
             
         </ul>  
@@ -130,28 +178,28 @@
     <span id="contactUsCloser" onclick="closeContactUs()"><i class="fa fa-close"></i></span>
     <!--<div id="topLogoTechnovision">Technovision</div>-->
     <div id="mobile_navigation_menu">
-        <div class="row">
-            <a href="#">Home</a>
-        </div>
-        <div class="row">
-            <a href="#">About</a>
-        </div>
-        <div class="row">
-            <a href="#">Team</a>
-        </div>
-        <div class="row">
-            <a href="#"></a>
-        </div>
-        <div class="row">
-            <a href="#">Download Format</a>
-        </div>
-        <div class="row">
-            <a href="#">Contact</a>
-        </div>
+            <div class="row">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="row">
+                <a href="topics.html">Topics</a>
+            </div>
+            <div class="row">
+                <a href="prizes.html">Prizes</a>
+            </div>
+            <div class="row">
+                <a href="index.html#rules">Rules</a>
+            </div>
+            <div class="row">
+                <a href="#">Team</a>
+            </div>
+            <div class="row">
+                <a href="#">Contact Us</a>
+            </div>
+            
         
     
-
-    </div>
+        </div>
 
 
     <div class="topics-container my-row my-height-50">
@@ -358,21 +406,7 @@
     </script>
     <script >
         
-          //smooth scrolling effect for anchor tag
-        
-          $(document).ready(function(){
-            $("a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              } ,1000,function(){
-              window.location.hash = hash;
-              });
-            }
-            });
-          });
+          
     </script>
 
 
