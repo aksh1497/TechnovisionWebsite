@@ -21,6 +21,7 @@
     
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/mobile_index.css">
+    <link rel="stylesheet" type="text/css" href="css/clockCount.css">
     
     
     <script src="js/jquery.min.js"></script>
@@ -79,6 +80,15 @@
 </script>
 </head>
 <body>
+
+    <div id="loader">
+            
+        <div class="loader-wrap">
+                <div class="loader"><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span></div>
+        </div>
+    </div>
+
+
     <header>
         <ul class="nav_menu_bg">
             <a href="#"><li class="active" id="home">Home</li></a>
@@ -224,6 +234,26 @@
             <div class="blindUp">
                 
             </div>
+            <div id="countDownClock">
+                <div id="clockdiv">
+                    <div>
+                      <span class="days"></span>
+                      <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                      <span class="hours"></span>
+                      <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                      <span class="minutes"></span>
+                      <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                      <span class="seconds"></span>
+                      <div class="smalltext">Seconds</div>
+                    </div>
+                  </div>
+            </div>
     </div>
 
 
@@ -235,6 +265,7 @@
             <div class="event_name" >
                     <h1 id="name">Technovision 2017</h1>
                     <h3 id="subname">( A National Level Technical Paper Presentation Event )</h3>
+                    
             </div>
         </div>  
     
@@ -250,7 +281,7 @@
                             <h1>Organised By</h1>
                             <h2 >Government College Of Engineering, Jalgaon</h2>
                     </div>
-
+                    
                 </div>
                 <div class="col_3 col_1_sm">
                 
@@ -583,6 +614,10 @@
         var rellax = new Rellax();
 
         $(document).ready(function(){
+
+           
+
+
             $("a").on('click', function(event) {
                     if (this.hash !== "") {
                         event.preventDefault();
@@ -609,6 +644,8 @@
     </script>
     <script>
         $(document).ready(function() {
+            
+            $('div#loader').fadeOut(1000);
             var bodyHeight;
             function reloader() {
                bodyHeight = $('body').height();
@@ -645,6 +682,9 @@
             });
             
         });
+        'use strict';
+
+   
     </script>
     <script >
         
@@ -676,7 +716,7 @@
           });
     </script>
 
-
+    <script src="js/clockCount.js"></script>
     <script src="js/functions_included.js">
     
     </script>
