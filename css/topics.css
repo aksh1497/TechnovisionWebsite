@@ -32,6 +32,15 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.my-card-head-note{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .my-bg-01{
     background-image: url("../img/bgimg01.jpeg");
 }
@@ -53,10 +62,13 @@
 .my-bg-07{
     background-image: url("../img/bgimg07.jpg");
 }
+.my-bg-08{
+    background-image: url("../img/bgimg08.jpeg");
+}
 
 .my-bg-tint{
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
 }
 .my-padd-10 {
     padding: 10px;

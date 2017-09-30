@@ -20,8 +20,8 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/hover.css">
     
-    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/committee.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     
     
     <script src="js/jquery.min.js"></script>
@@ -66,48 +66,112 @@
 </script>
 </head>
 <body>
-    <header>
-        <ul class="nav_menu_bg nav_black">
-            <a href="#"><li class="active">Home</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Topics</li></a>
-            <a href="#"><li class="hvr-underline-from-center">Prizes</li></a>
-            <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
-            <a href="formats/IEEE_format.docx"><li class="hvr-underline-from-center">Rules</li></a>
-            <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
-            <a href="#"><li class="hvr-underline-from-center">Contact Us</li></a>
+        <header>
+                <ul class="nav_menu_bg nav_black">
+                    <a href="index.html"><li class="hvr-unserline-from-center">Home</li></a>
+                    <a href="topics.html"><li class="hvr-underline-from-center">Topics</li></a>
+                    <a href="prizes.html"><li class="hvr-underline-from-center">Prizes</li></a>
+                    <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
+                    <a href="index.html#rules"><li class="hvr-underline-from-center">Rules</li></a>
+                    <a href="committee.html"><li class="active">Team </li></a>
+                    
+                </ul>  
+                
+                
+               
+            </header>
+            <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
+            <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
+            <span id="importantDatesCloser" onclick="closeImportantDates()"><i class="fa fa-close"></i></span>
+            <span id="contactUsCloser" onclick="closeContactUs()"><i class="fa fa-close"></i></span>
+            <!--<div id="topLogoTechnovision">Technovision</div>-->
+            <div id="mobile_navigation_menu">
+            <div class="row">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="row">
+                <a href="topics.html">Topics</a>
+            </div>
+            <div class="row">
+                <a href="prizes.html">Prizes</a>
+            </div>
+            <div class="row">
+                <a href="index.html#rules">Rules</a>
+            </div>
+            <div class="row">
+                <a href="#">Team</a>
+            </div>
+            <div class="row">
+                <a href="#">Contact Us</a>
+            </div>
             
-        </ul>  
-        
-        
-       
-    </header>
-    <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
-    <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
-    
-    <!--<div id="topLogoTechnovision">Technovision</div>-->
-    <div id="mobile_navigation_menu">
-        <div class="row">
-            <a href="#">Home</a>
-        </div>
-        <div class="row">
-            <a href="#">About</a>
-        </div>
-        <div class="row">
-            <a href="#">Team</a>
-        </div>
-        <div class="row">
-            <a href="#"></a>
-        </div>
-        <div class="row">
-            <a href="#">Download Format</a>
-        </div>
-        <div class="row">
-            <a href="#">Contact</a>
-        </div>
         
     
-
-    </div>
+        </div>
+        <div id="contactUs" >
+                <div class="row" style="padding-top:50px">
+                    <div class="header">
+                        <h1 style="color:white;">Contact Us :</h1>
+                    </div>
+                    <div class="body">
+            
+                        <div class="row_contact_us">
+                            <div class="columnHalfContactUs" id="smallDisplayContact">
+                                <table id="table_for_contact">
+                                    <tr>
+                                        <th>Name </th>
+                                        <th>Designation</th>
+                                        <th>Contact No.</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Pranjal A. Upadhyay</td>
+                                        <td>convener </td>
+                                        <td>8149901151</td>
+                                    </tr>   
+                                    <tr>
+                                            <td>Sachchak Waghmare</td>
+                                            <td>Co-convener </td>
+                                            <td>7620558850</td>
+                                    </tr>
+                                    <tr>
+                                            <td> Sachin Udas</td>
+                                            <td>Group A Co-ordinator</td>
+                                            <td>9923355994</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Vipul Bankar</td>
+                                            <td>Group B Co-ordinator</td>
+                                            <td>8087367115</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Rushikesh Potale</td>
+                                            <td>Hospitality<br/>(Boys)</td>
+                                            <td>8421314411</td>
+                                    </tr>
+                                    <tr>
+                                            <td>Anuja Momle</td>
+                                            <td>Hospitality<br/>(Girls)</td>
+                                            <td>9168234344</td>
+                                    </tr>
+            
+                                </table>
+                            </div>
+                            <div class="columnHalfContactUs" id="doNotDisplay">
+                                
+                                                <div class="row_one">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7457468286448!2d75.54658771493219!3d21.002826586012358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fc9945a06b3%3A0x2adbed89161ccac2!2sGovernment+College+of+Engineering!5e0!3m2!1sen!2sin!4v1506286742665" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="row_two">
+                                                    <h1>Address :</h1> 
+                                                <h2>Opp. DIC office, National Highway 6, Jalgoan 425002</h2>
+                                                </div>
+                                    </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                        
 
 
     <div class="topics-container my-row my-height-50">
@@ -130,24 +194,24 @@
                 <td>Steering Committee</td>
                 <td>
                     <ul>
-                        <li>Dr. R.P.Borkar (Principal)</li>
-                        <li>Dr. R.D.Kokate (HOD Instrumentation)</li>
-                        <li>Dr. S.S.Pusadkar (HOD Civil)</li>
-                        <li>Dr. A.R.Phadke (HOD Electrical)</li>
-                        <li>Dr. D.S.Chaudhari (HOD E&TC)</li>
-                        <li>Prof. D.V.Chaudhari (HOD Computer)</li>
-                        <li>Dr. M.S.Phalak (HOD Applied Science)</li>
-                        <li>Dr. R.R.Landge (Workshop Superintendent)</li>
-                        <li>Dr. M.J.Sable (Convenor)</li>
-                        <li>Dr. S.M.Wani (Co-Convenor)</li>
+                        <li>Dr. R. P. Borkar (Principal)</li>
+                        <li>Dr. M. J. Sable (HOD Mechanical & Convener)</li>                        
+                        <li>Dr. R. D. Kokate (HOD Instrumentation)</li>
+                        <li>Dr. S. S. Pusadkar (HOD Civil)</li>
+                        <li>Dr. A. R. Phadke (HOD Electrical)</li>
+                        <li>Dr. D. S. Chaudhari (HOD E&TC)</li>
+                        <li>Prof. D. V. Chaudhari (HOD Computer)</li>
+                        <li>Prof. M. S. Phalak (HOD Applied Science)</li>
+                        <li>Prof. R. R. Landge (Workshop Superintendent)</li>
+                        <li>Prof. S. M. Wani (Co-Convener)</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Convener- Mr.Pranjal A. Upadhyay (L.Y.Mech.-8149901151)</li>
-                        <li>Co-convener- Mr. Sachchak Waghmare (LY-Elect 7620558850)</li>
-                        <li>Group A Co- Sachin Udas (LY-Instru 9923355994)</li>
-                        <li>Group B Co- Vipul Bankar (TY-Mech 808736115)</li>
+                        <li>Convener- Mr.Pranjal A. Upadhyay (8149901151)</li>
+                        <li>Co-Convener- Mr. Sachchak Waghmare (7620558850)</li>
+                        <li>Group A Co- Sachin Udas (9923355994)</li>
+                        <li>Group B Co- Vipul Bankar (808737115)</li>
                     </ul>
                 </td>
             </tr>
@@ -156,14 +220,14 @@
                 <td>Web Design Committee</td>
                 <td>
                     <ul>
-                        <li>Prof. H.D.Gadade (Computer)</li>
+                        <li>Prof. H.D.Gadade </li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Bhushan Rathod (LY-Comp 8888658103)</li>
-                        <li>Co- Rizwan Syed (LY-Comp 9922592979)</li>
-                        <li>Coco- Ankush Patil (TY-Comp 7350221618)</li>
+                        <li>Co- Bhushan Rathod ( 8888658103)</li>
+                        <li>Co- Rizwan Syed ( 9922592979)</li>
+                        <li>CoCo- Ankush Patil ( 7350221618)</li>
                     </ul>
                 </td>
             </tr>
@@ -172,22 +236,22 @@
                 <td>Paper overview and Event  committee</td>
                 <td>
                     <ul>
-                        <li>Prof. R.V.Mahajan (Mech)</li>
-                        <li>Prof. M.S.Patil (Instru)</li>
+                        <li>Prof. R.V.Mahajan (Mechanical)</li>
+                        <li>Prof. M.S.Patil (Instrumentation)</li>
                         <li>Prof. A.G.Andurkar (E&TC)</li>
-                        <li>Prof. S.S.Kulkarni (Elect)</li>
+                        <li>Prof. S.S.Kulkarni (Electrical)</li>
                         <li>Prof. K.R.Sarode (Computer)</li>
                         <li>Prof. V.T.Patil (Civil)</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Pratik Jumde (TY-Mech 7387906215)</li>
-                        <li>Co- Adnya Patil (LY-Instru 7588615460)</li>
-                        <li>Co- Hemant Lanjewar (LY-E&TC 9823646863)</li>
-                        <li>Co- Mangesh Waghmare (LY-Elect 9096219778)</li>
-                        <li>Co- Saurabh Jaiswal (LY-Comp 8380888338)</li>
-                        <li>Co- Vaibhav Patil (LY-Civil 8484894168)</li>
+                        <li>Co- Pratik Jumde ( 7387906215)</li>
+                        <li>Co- Adnya Patil (7588615460)</li>
+                        <li>Co- Hemant Lanjewar ( 9823646863)</li>
+                        <li>Co- Mangesh Waghmare ( 9096219778)</li>
+                        <li>Co- Saurabh Jaiswal (8380888338)</li>
+                        <li>Co- Vaibhav Patil (8484894168)</li>
                     </ul>
                 </td>
             </tr>
@@ -202,8 +266,8 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co-Shubham Badhe(LY-Instru 9552187898)</li>
-                        <li>Coco-Ganesh Gadekar(SY-Mech 9766020281)</li>
+                        <li>Co-Shubham Badhe( 9552187898)</li>
+                        <li>Coco-Ganesh Gadekar( 9766020281)</li>
                     </ul>
                 </td>
             </tr>
@@ -213,13 +277,13 @@
                 <td>
                     <ul>
                         <li>Prof. D.P.Yawalkar</li>
-                        <li>Prof. M.S.Bhaltadak</li>
+                        <li>Shri. M.S.Bhaltadak</li>
                     </ul>
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Rushikesh Taur (TY-Instru 9767392440)</li>
-                        <li>Coco- Tushar Sonsare (TY-Mech 7249814351)</li>
+                        <li>Co- Rushikesh Taur ( 9767392440)</li>
+                        <li>Coco- Tushar Sonsare ( 7249814351)</li>
                     </ul>
                 </td>
             </tr>
@@ -235,10 +299,10 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Rushikesh Potale (LY-Instru 8421314411)</li>
-                        <li>Co- Anuja Momale (LY-Comp 954511490)</li>
-                        <li>Coco- Chandan Gondane (LY- 9130704191)</li>
-                        <li>Coco- Madhu Prasad (TY-Instru 7720944397)</li>
+                        <li>Co- Rushikesh Potale (8421314411)</li>
+                        <li>Co- Anuja Momle (9168234344)</li>
+                        <li>Coco- Chandan Gondane ( 9130704191)</li>
+                        <li>Coco- Madhu Prasad ( 7720944397)</li>
                     </ul>
                 </td>
             </tr>
@@ -254,9 +318,9 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Sagar Morey (LY-Instru 7350261815)</li>
-                        <li>Co- Akshata Shah (LY-Comp 9156707173)</li>
-                        <li>Coco- Ankita Pojge (LY-Instru 7038231013)</li>
+                        <li>Co- Sagar Morey (7350261815)</li>
+                        <li>Co- Akshata Shah (9156707173)</li>
+                        <li>Coco- Ankita Pojge (7038231013)</li>
                     </ul>
                 </td>
             </tr>
@@ -272,8 +336,8 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Machchindranath Mhaske (LY-Instru 9403426756)</li>
-                        <li>Coco- Rajat Gangurde (TY-Mech 9689295973)</li>
+                        <li>Co- Machchindranath Mhaske (9403426756)</li>
+                        <li>Coco- Rajat Gangurde ( 9689295973)</li>
                     </ul>
                 </td>
             </tr>
@@ -289,8 +353,8 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Kiran Gajbhiye (LY-Comp 7218596091)</li>
-                        <li>Coco-Chetan Agrawal(TY-Comp 8055509445)</li>
+                        <li>Co- Kiran Gajbhiye (7218596091)</li>
+                        <li>Coco-Chetan Agrawal(8055509445)</li>
                     </ul>
                 </td>
             </tr>
@@ -306,10 +370,10 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Komal Gahane (TY-Instru 8180939088)</li>
-                        <li>Coco- Saurabh Chaudhari (SY-Mech 7030302887)</li>
-                        <li>Co- Akash Bhosale (TY-Mech 7798679796)</li>
-                        <li>Coco- Sanika Nimbalkar</li>
+                        <li>Co- Komal Gahane ( 8180939088)</li>
+                        <li>Coco- Saurabh Chaudhari (7030302887)</li>
+                        <li>Co- Akash Bhosale ( 7798679796)</li>
+                        <li>Coco- Sanika Nimbalkar (9960355229)</li>
                     </ul>
                 </td>
             </tr>
@@ -323,8 +387,8 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Surbhi Kankariya (LY-Comp 8793768071)</li>
-                        <li>Coco- Kunal Chaudhari (TY-Mech 9403231956)</li>
+                        <li>Co- Surbhi Kankariya ( 8793768071)</li>
+                        <li>Coco- Kunal Chaudhari ( 9403231956)</li>
                     </ul>
                 </td>
             </tr>
@@ -338,10 +402,10 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Shubham Dukandar (LY-E&TC 9561971056)</li>
-                        <li>Co- Komal Tawade (TY-Instru 9860663662)</li>
-                        <li>Coco- Dhananjay Mahajan ( TY-Mech 7709251297)</li>
-                        <li>Coco- Ankita  Gajbhiye (SY-Mech 7387157466)</li>
+                        <li>Co- Shubham Dukandar ( 9561971056)</li>
+                        <li>Co- Komal Tawade (9860663662)</li>
+                        <li>Coco- Dhananjay Mahajan (  7709251297)</li>
+                        <li>Coco- Ankita  Gajbhiye (7387157466)</li>
                     </ul>
                 </td>
             </tr>
@@ -355,8 +419,8 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Dhnyaneshwar Gore(LY-Civil 8390389027)</li>
-                        <li>Coco-Amardeep Tayade(TY-Mech 9604234409)</li>
+                        <li>Co- Dnyaneshwar Gore(8390389027)</li>
+                        <li>Coco- Amardeep Tayade( 9604234409)</li>
                     </ul>
                 </td>
             </tr>
@@ -371,8 +435,8 @@
                 </td>
                 <td>
                     <ul>
-                        <li>Co- Veena Suryawanshi (LY-civil 8788809750)</li>
-                        <li>Coco- Dipak Palve (TY-Mech 8793799857)</li>
+                        <li>Co- Veena Suryawanshi (8788809750)</li>
+                        <li>Coco- Dipak Palve (8793799857)</li>
                     </ul>
                 </td>
             </tr>
@@ -484,43 +548,68 @@
         
           //smooth scrolling effect for anchor tag
         
-          $(document).ready(function(){
-            $("a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              } ,1000,function(){
-              window.location.hash = hash;
-              });
-            }
-            });
-          });
     </script>
 
 
     <script>
     
+    function openNavigation() {
         
-        function openNavigation() {
-            
-            var nav= document.getElementById('mobile_navigation_menu');
-            nav.style.display = "inline-block";
-            var opener=document.getElementById('opener');
-            opener.style.display = "none";
-            var closer=document.getElementById('closer');
-            closer.style.display = "inline-block";
-        }
-        function closeNavigation() {
-            
-            var nav= document.getElementById('mobile_navigation_menu');
-            nav.style.display = "none";
-            var opener=document.getElementById('closer');
-            opener.style.display = "none";
-            var closer=document.getElementById('opener');
-            closer.style.display = "inline-block";
-        }
+        var nav= document.getElementById('mobile_navigation_menu');
+        nav.style.display = "inline-block";
+        var opener=document.getElementById('opener');
+        opener.style.display = "none";
+        var closer=document.getElementById('closer');
+        closer.style.display = "inline-block";
+    }
+    function closeNavigation() {
+        
+        var nav= document.getElementById('mobile_navigation_menu');
+        nav.style.display = "none";
+        var opener=document.getElementById('closer');
+        opener.style.display = "none";
+        var closer=document.getElementById('opener');
+        closer.style.display = "inline-block";
+    }
+    function showImportantDates() {
+        var dates = document.getElementById('importantDates');
+        dates.style.display="block";
+        var openerHider = document.getElementById('opener');
+        openerHider.style.display = "none";
+        var closer = document.getElementById('importantDatesCloser');
+        closer.style.display = "block"; 
+
+    }
+    function closeImportantDates() {
+        var dates = document.getElementById('importantDates');
+        dates.style.display="none";
+        var closer = document.getElementById('importantDatesCloser');
+        closer.style.display = "none";
+        var openerHider = document.getElementById('opener');
+        openerHider.style.display = "block";
+    }
+    function showContactUs() {
+
+        var dates = document.getElementById('contactUs');
+        dates.style.display="block";
+        var openerHider = document.getElementById('opener');
+        openerHider.style.display = "none";
+        var closer = document.getElementById('contactUsCloser');
+        closer.style.display = "block"; 
+
+    }
+    function closeContactUs() {
+        var dates = document.getElementById('contactUs');
+        dates.style.display="none";
+        var closer = document.getElementById('contactUsCloser');
+        closer.style.display = "none";
+        var openerHider = document.getElementById('opener');
+        openerHider.style.display = "block";
+    }
     </script>
+
+     <script >
+        
+        </script>
 </body>
 </html> 

@@ -95,12 +95,12 @@
                                     </tr>
                                     <tr>
                                         <td>Pranjal A. Upadhyay</td>
-                                        <td>Convenor </td>
+                                        <td>Convener </td>
                                         <td>8149901151</td>
                                     </tr>   
                                     <tr>
                                             <td>Sachchak Waghmare</td>
-                                            <td>Co-Convenor </td>
+                                            <td>Co-Convener </td>
                                             <td>7620558850</td>
                                     </tr>
                                     <tr>
@@ -141,51 +141,49 @@
                         
                     </div>
                 </div>
+                        
 
 
-    <header>
-        <ul class="nav_menu_bg nav_black">
-            <a href="index.html"><li class="hvr-underline-from-center ">Home</li></a>
-            <a href="#"><li class="active">Topics</li></a>
-            <a href="prizes.html"><li class="hvr-underline-from-center">Prizes</li></a>
-            <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
-            <a target="_parent" href="index.html#rules"><li class="hvr-underline-from-center">Rules</li></a>
-            <a href="committee.html"><li class="hvr-underline-from-center">Team </li></a>
-            <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
-            
-        </ul>  
-        
-        
-       
-    </header>
+            <header>
+                        <ul class="nav_menu_bg">
+                            <a href="index.html"><li class="hvr-underline-from-center" id="home">Home</li></a>
+                            <a href="topics.html"><li class="active " id="topics">Topics</li></a>
+                            <a href="prizes.html"><li class="hvr-underline-from-center" id="prizes">Prizes</li></a>
+                            <a href=""><li class="hvr logo" id="listLogoTechnovision" style="" id="blank"></li></a>
+                            <a href="index.html#rules"><li class="hvr-underline-from-center" id="rules_menu">Rules</li></a>
+                            <a href="committee.html"><li class="hvr-underline-from-center" id="team">Team </li></a>
+                            <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
+                            
+                        </ul>  
+                        
+                        
+                       
+            </header>
     <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
     <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
     <span id="importantDatesCloser" onclick="closeImportantDates()"><i class="fa fa-close"></i></span>
     <span id="contactUsCloser" onclick="closeContactUs()"><i class="fa fa-close"></i></span>
     <!--<div id="topLogoTechnovision">Technovision</div>-->
     <div id="mobile_navigation_menu">
-        <div class="row">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="row">
-            <a href="topics.html">Topics</a>
-        </div>
-        <div class="row">
-            <a href="prizes">Prizes</a>
-        </div>
-        <div class="row">
-            <a href="index.html#rules">Rules</a>
-        </div>
-        <div class="row">
-            <a href="#">Team</a>
-        </div>
-        <div class="row">
-            <a href="#">Contact Us</a>
-        </div>
-        
-    
-
-    </div>
+            <div class="row">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="row">
+                <a href="topics.html">Topics</a>
+            </div>
+            <div class="row">
+                <a href="prizes.html">Prizes</a>
+            </div>
+            <div class="row">
+                <a href="index.html#rules">Rules</a>
+            </div>
+            <div class="row">
+                <a href="#">Team</a>
+            </div>
+            <div class="row">
+                <a href="#">Contact Us</a>
+            </div>
+     </div>       
 
 
     <div class="topics-container my-row my-height-50">
@@ -339,6 +337,17 @@
                     </div>
                 </div>
             </div>
+            <div class="my-col-12 my-padd-10">
+                <div class="my-card-main">
+                    <div class="my-card-head my-col-12 my-bg-08">
+                        <div class="my-bg-tint">
+                            <p class="my-card-head-note " >
+                                Topics for paper presentation are not limited to those mentioned above. Any Relevent Techincal topic can be chosen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>  
     </div>
     
@@ -387,7 +396,19 @@
     <script>
         var rellax = new Rellax();
 
-
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        } ,1500,function(){
+                        window.location.hash = hash;
+                        });
+                    }
+            });
+        });
         wow = new WOW(
         {
             animateClass: 'animated',
