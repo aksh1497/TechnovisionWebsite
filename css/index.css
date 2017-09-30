@@ -524,22 +524,93 @@ div#importantDates {
     position:fixed;
     z-index:10;
     top:0; left:0;
-    background-color:rgba(0,0,0,0.9);
+    background-color:rgba(0, 0, 0, 0.95);
     display:none;
 }
 span#importantDatesCloser {
-    color:#fff;
+    color:rgb(23,122,166);
     font-size:2.4em;
     position:fixed;
     left:20px;
     top:20px;
-    z-index:20;
+    z-index:28;
     display:inline-block;
 
 }
 span#importantDatesCloser {
     display:none;
 }
+div#importantDates div.header {
+    margin-top:50px;
+}
+
+div#importantDates div.body {
+    width:50%;
+    color:#fff;
+    margin:0 auto;
+}
+
+div#importantDates div.body h1 {
+    font-size:1.8em;
+}
+
+
+
+/*
+div#importantDates table {
+    width:50%;
+    margin:0 auto;
+    color:#000;
+    left:25%;
+    text-align:center;
+    top:25%;
+    padding:20px;
+    background-color:transparent;
+    border-bottom:1px solid #ddd;
+}
+div#importantDates tr {
+    padding:5px;
+}
+
+div#importantDates table tr * {
+    text-align:center;
+    padding:10px;
+    border-radius:8px;
+    margin-left:20px;   
+    margin:10px;
+}
+div#importantDates table tr:nth-child(odd) {
+    background-color:#f2f2f2;
+}
+div#importantDates table th  {
+    margin:20px;
+    background-color:rgb(23,122,166);
+    color:#fff;
+}
+
+
+*/
+
+
+
+@media screen and (min-width:1000px) {
+
+    div#importantDates table {
+        font-size:1.5em;
+    }
+}
+
+@media screen and (max-width:600px) {
+    div#importantDates table {
+        width:80%;
+    }
+}
+
+
+
+
+
+
 
 div#contactUs {
     width:100%;
@@ -567,7 +638,19 @@ span#contactUsCloser:hover {
     transform:scale(1.1);
     cursor:pointer;
 }
+div#importantDates div.header {
+    margin-top:500px;
+}
 
+div#contactUs div.body {
+    width:50%;
+    color:#fff;
+    margin:0 auto;
+}
+
+div#contactUs div.body h1 {
+    font-size:1.8em;
+}
 
 
 

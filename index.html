@@ -50,6 +50,10 @@
         div#college_logo_below * {
             margin:5px;
         }
+        div.container div.section div.col div.card div.card-content p {
+            transform:scale(1.1);
+            font-size:15px;
+        }
     </style>
     <script>
         $(function(){
@@ -76,12 +80,12 @@
 <body>
     <header>
         <ul class="nav_menu_bg">
-            <a href="#"><li class="active">Home</li></a>
-            <a href="topics.html"><li class="hvr-underline-from-center">Topics</li></a>
-            <a href="prizes.html"><li class="hvr-underline-from-center">Prizes</li></a>
-            <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
-            <a href="#rules"><li class="hvr-underline-from-center">Rules</li></a>
-            <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
+            <a href="#"><li class="active" id="home">Home</li></a>
+            <a href="topics.html"><li class="hvr-underline-from-center" id="topics">Topics</li></a>
+            <a href="prizes.html"><li class="hvr-underline-from-center" id="prizes">Prizes</li></a>
+            <a href="#"><li class="hvr logo" id="listLogoTechnovision" style="" id="blank"></li></a>
+            <a href="#rules"><li class="hvr-underline-from-center" id="rules_menu">Rules</li></a>
+            <a href="about.html"><li class="hvr-underline-from-center" id="team">Team </li></a>
             <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
             
         </ul>  
@@ -125,7 +129,17 @@
 
     <div id="importantDates" >
            
-        
+        <div class="row">
+            <div class="header">
+                <h1 style="color:white">Important Dates :</h1>
+            </div>
+            <div class="body">
+                <h1> Full length paper submission : 6th October,2017</h1>
+                <h1> Acceptance, revision & Notification : 09th October,2017</h1>
+                <h1> Display of Presentation schedule : 10th October,2017</h1>
+                <h1> Paper submission Email : contact.technovision@gcoej.ac.in</h1>
+            </div>
+        </div>
           
             
         
@@ -133,7 +147,15 @@
     </div>
 
     <div id="contactUs" >
-            
+        <div class="row" style="padding-top:50px">
+            <div class="header">
+                <h1 style="color:white;">Contact Us :</h1>
+            </div>
+            <div class="body">
+                <h1> Pranjal Upadhyay :-  8149901151</h1>
+                <h1> Sachchak Waghmare :- 7620558850</h1>
+            </div>
+        </div>
          
            
              
@@ -237,7 +259,7 @@
                     
             </div>
         
-        <div class="about_technovision">
+        <div class="about_technovision" >
             <div class="header" >
                 <h1> Rules and<span class="blue_color"> Regulations</span></h1>
             </div>
@@ -358,7 +380,7 @@
                         <div class="header">
                                 <h1> Chief<span class="blue_color"> Patrons</span></h1>
                         </div>
-                        <div class="col s12 m4 offset-m1">
+                        <div class="col s12 m5 offset-m1">
                             <div class="card">
                                 <div class="card-image">
                                     <img src="img/meeta_rajivlochan.png">
@@ -369,7 +391,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col s12 m4 offset-m2">
+                        <div class="col s12 m5 offset-m0">
                             <div class="card">
                             <div class="card-image">
                               <img src="img/ab_jain.png">
@@ -387,7 +409,7 @@
                             <div class="header">
                                 <h1> Pat<span class="blue_color">rons</span></h1>
                             </div>
-                            <div class="col s12 m4 offset-m1">
+                            <div class="col s12 m5 offset-m1">
                                 <div class="card">
                                     <div class="card-image">
                                         <img src="img/dp_nathe.png">
@@ -398,7 +420,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col s12 m4 offset-m2">
+                            <div class="col s12 m5 offset-m0">
                                 <div class="card">
                                     <div class="card-image">
                                         <img src="img/rp_borkar.png">
@@ -416,7 +438,7 @@
                             <div class="header">
                                     <h1> Fac<span class="blue_color">ulty</span></h1>
                             </div>
-                        <div class="col s12 m4 offset-m1">
+                        <div class="col s12 m5 offset-m1">
                             <div class="card">
                             <div class="card-image">
                               <img src="img/mj_sable.png">
@@ -427,7 +449,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col s12 m4 offset-m2">
+                        <div class="col s12 m5 offset-m0">
                             <div class="card">
                             <div class="card-image">
                               <img src="img/icon.png">
@@ -548,7 +570,14 @@
                     $('#topLogoTechnovision').css('display','none');
 
                  }
-
+                 if($(window).scrollTop() > 1100) {
+                     $('#home').removeClass("active");
+                     $('#rules_menu').addClass("active");
+                 }
+                 else {
+                     $('#rules_menu').removeClass("active");
+                    $('#home').addClass("active");
+                    }
             });
             
         });
@@ -572,6 +601,10 @@
 
             $('#ta_rules').css('display',"none");
             $('#accomodation_rules').css('display',"none");
+
+
+
+
 
 
 

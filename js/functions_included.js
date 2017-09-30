@@ -1,51 +1,3 @@
-        function hasClass(el, className) {
-            if (el.classList)
-            return el.classList.contains(className)
-            else
-            return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
-        }
-        
-        function addClass(el, className) {
-            alert("hello");
-            if (el.classList)
-            el.classList.add(className)
-            else if (!hasClass(el, className)) el.className += " " + className
-        }
-        
-        function removeClass(el, className) {
-            if (el.classList)
-            el.classList.remove(className)
-            else if (hasClass(el, className)) {
-            var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
-            el.className=el.className.replace(reg, ' ')
-            }
-        }
-
-  
-function setaccomodationRules() {
-    var tablock = document.getElementById('ta_rules');
-    tablock.style.display = "none";
-    var accomodation_block = document.getElementById('accomodation_rules');
-    accomodation_block.style.display = "block";
-    
-    var rel = documen.getElmentById('extra_rules_buttons_ta');
-    var el = document.getElementById('extra_rules_buttons_ac');
-
-    removeClass(rel,"traveling_allowance-active")
-    removeClass(rel,"hvr-bubble-bottom");
-    removeClass(rel,"hvr-bubble-bottom");
-    
-    
-    addClass(el,"traveling_allowance-active");
-    addClass(el,"hvr-bubble-bottom");
-    addClass(el,"hvr-bubble-bottom-active");
-
-
-
-
-
-}
-
 
         
         function openNavigation() {
@@ -122,6 +74,51 @@ function setaccomodationRules() {
 
 
         }
+        function setaccomodationRules() {
+            var tablock = document.getElementById('ta_rules');
+            tablock.style.display = "none";
+            var accomodation_block = document.getElementById('accomodation_rules');
+            accomodation_block.style.display = "block";
+            
+            var rel = documen.getElmentById('extra_rules_buttons_ta');
+            var el = document.getElementById('extra_rules_buttons_ac');
+
+            removeClass(rel,"traveling_allowance-active")
+            removeClass(rel,"hvr-bubble-bottom");
+            removeClass(rel,"hvr-bubble-bottom");
+            
+            
+            addClass(el,"traveling_allowance-active");
+            addClass(el,"hvr-bubble-bottom");
+            addClass(el,"hvr-bubble-bottom-active");
+
         
+        
+        
+        
+        }
+
+        function hasClass(el, className) {
+            if (el.classList)
+              return el.classList.contains(className)
+            else
+              return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
+          }
+          
+          function addClass(el, className) {
+              alert("hello");
+            if (el.classList)
+              el.classList.add(className)
+            else if (!hasClass(el, className)) el.className += " " + className
+          }
+          
+          function removeClass(el, className) {
+            if (el.classList)
+              el.classList.remove(className)
+            else if (hasClass(el, className)) {
+              var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+              el.className=el.className.replace(reg, ' ')
+            }
+          }
 
 
