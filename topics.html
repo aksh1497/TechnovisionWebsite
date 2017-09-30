@@ -93,7 +93,7 @@
             <a href="#"><li class="active">Topics</li></a>
             <a href="prizes.html"><li class="hvr-underline-from-center">Prizes</li></a>
             <a href="#"><li class="hvr logo" id="listLogoTechnovision" style=""></li></a>
-            <a href="/index.html#rules?"><li class="hvr-underline-from-center">Rules</li></a>
+            <a target="_parent" href="index.html#rules"><li class="hvr-underline-from-center">Rules</li></a>
             <a href="about.html"><li class="hvr-underline-from-center">Team </li></a>
             <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
             
@@ -118,13 +118,13 @@
             <a href="prizes">Prizes</a>
         </div>
         <div class="row">
-            <a href="#"></a>
+            <a href="index.html#rules">Rules</a>
         </div>
         <div class="row">
-            <a href="#">Download Format</a>
+            <a href="#">Team</a>
         </div>
         <div class="row">
-            <a href="#">Contact</a>
+            <a href="#">Contact Us</a>
         </div>
         
     
@@ -331,19 +331,7 @@
     <script>
         var rellax = new Rellax();
 
-        $(document).ready(function(){
-            $("a").on('click', function(event) {
-                    if (this.hash !== "") {
-                        event.preventDefault();
-                        var hash = this.hash;
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        } ,1500,function(){
-                        window.location.hash = hash;
-                        });
-                    }
-            });
-        });
+
         wow = new WOW(
         {
             animateClass: 'animated',
@@ -392,19 +380,6 @@
         
           //smooth scrolling effect for anchor tag
         
-          $(document).ready(function(){
-            $("a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              } ,1000,function(){
-              window.location.hash = hash;
-              });
-            }
-            });
-          });
     </script>
 
 
