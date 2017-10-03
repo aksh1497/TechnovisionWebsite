@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Technovision 2k17</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/faviconIcon.ico" />
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Roboto" rel="stylesheet">    
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+    <link rel="stylesheet" type="text/css" href="css/cursor.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile_index.css">
+    <link rel="stylesheet" type="text/css" href="css/clockCount.css">
+    
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/typed.js"></script>
+    
+    
+    <style>
+       
+        body div.header h1 {
+            font-weight:bold;
+        }
+        body div.card {
+            box-shadow:none;
+        }
+        body div.card img {
+            transform:scale(0.7);
+        }
+        body header {
+            background-color:transparent;
+        }
+        img#collegeLogo {
+            width:55px;  
+        }
+        div#college_logo_below {
+            margin-top:30px;
+        }
+        div#college_logo_below * {
+            margin:5px;
+        }
+        div.container div.section div.col div.card div.card-content p {
+            transform:scale(1.1);
+            font-size:15px;
+        }
+
+
+        div#stickerAbhi {
+            width:100px;
+            position: fixed;
+            top:30%;
+            left:-9px;
+            z-index:10;
+            transition-duration:0.5s;
+            
+            
+        }
+        div#stickerAbhi:hover  {
+            left:0px;
+            cursor:pointer;
+            
+        }
+        div#stickerAbhi img {
+            width:100px;
+            
+        }
+    </style>
+    <script>
+        $(function(){
+                $("#typed").typed({
+                    // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+                    stringsElement: $('#typed-strings'),
+                    typeSpeed: 20,
+                    backDelay: 500,
+                    loop: true,
+                    contentType: 'html', // or text
+                    // defaults to false for infinite loop
+                    loopCount: false,
+                    callback: function(){ foo(); },
+                    resetCallback: function() { newTyped(); }
+                });
+                $(".reset").click(function(){
+                    $("#typed2").typed('reset');
+                });
+            });
+        function newTyped(){ /* A new typed object */ }
+        function foo(){ console.log("Callback"); }
+</script>
+</head>
+<body>
+
+    <div id="loader">
+            
+        <div class="loader-wrap">
+                <div class="loader"><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span><span class="loader-item"></span></div>
+        </div>
+    </div>
+    <div id="stickerAbhi">
+       <a href="../Abhivyakti/index.html"> <img src="img/abhivyakti_icon.png"  title="Click to visit Abhivyakti Website."/></a>
+    </div>
+
+    <header>
+        <ul class="nav_menu_bg">
+            <a href="#"><li class="active" id="home">Home</li></a>
+            <a href="topics.html"><li class="hvr-underline-from-center" id="topics">Topics</li></a>
+            <a href="prizes.html"><li class="hvr-underline-from-center" id="prizes">Prizes</li></a>
+            <a href="#"><li class="hvr logo" id="listLogoTechnovision" style="" id="blank"></li></a>
+            <a href="#rules"><li class="hvr-underline-from-center" id="rules_menu">Rules</li></a>
+            <a href="committee.html"><li class="hvr-underline-from-center" id="team">Team </li></a>
+            <a href="#"><li class="hvr-underline-from-center" onclick="showContactUs()">Contact Us</li></a>
+            
+        </ul>  
+        
+        
+       
+    </header>
+    <span id="opener" onclick="openNavigation()"><i class="fa fa-navicon"></i></span>
+    <span id="closer" onclick="closeNavigation()"><i class="fa fa-close"></i></span>
+
+    <span id="importantDatesCloser" onclick="closeImportantDates()"><i class="fa fa-close"></i></span>
+    <span id="contactUsCloser" onclick="closeContactUs()"><i class="fa fa-close"></i></span>
+    
+    <div id="topLogoTechnovision">Technovision 2k17</div>
+
+
+    
+    <div id="mobile_navigation_menu">
+            <div class="row">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="row">
+                <a href="topics.html">Topics</a>
+            </div>
+            <div class="row">
+                <a href="prizes.html">Prizes</a>
+            </div>
+            <div class="row">
+                <a href="index.html#rules" onclick="closeNavigation()">Rules</a>
+            </div>
+            <div class="row">
+                <a href="committee.html">Team</a>
+            </div>
+            <div class="row">
+                <a href="#" onclick="showContactUs()">Contact Us</a>
+            </div>
+            <div class="row">
+                    <a href="../Abhivyakti/index.html"><img src="img/abhi.png" style="width:200px;margin-top:-50px;"/></a>
+             </div>
+        
+    
+        </div>
+
+    <div id="importantDates" >
+           
+        <div class="row">
+            <div class="header">
+                <h1 style="color:white">Important Dates :</h1>
+            </div>
+            <div class="body" id="importantDatesForSmallScreen">
+                <h1>1. Full length paper submission  : 6th October, 2017<br/> (Extended Upto 7<sup>th</sup> October, 2017 )</h1>
+                <h1>2. Acceptance, revision & Notification : 09th October, 2017</h1>
+                <h1>3. Display of Presentation schedule : 10th October, 2017</h1>
+                <h1>4. Paper submission Email : contact.technovision@gcoej.ac.in</h1>
+            </div>
+        </div>
+          
+            
+        
+    
+    </div>
+
+    <div id="contactUs" >
+    <div class="row" style="padding-top:50px">
+        <div class="header">
+            <h1 style="color:white;">Contact Us :</h1>
+        </div>
+        <div class="body">
+
+            <div class="row_contact_us">
+                <div class="columnHalfContactUs" id="smallDisplayContact">
+                    <table id="table_for_contact">
+                        <tr>
+                            <th>Name </th>
+                            <th>Designation</th>
+                            <th>Contact No.</th>
+                        </tr>
+                        <tr>
+                            <td>Pranjal A. Upadhyay</td>
+                            <td>Convener </td>
+                            <td>8149901151</td>
+                        </tr>   
+                        <tr>
+                                <td>Sachchak Waghmare</td>
+                                <td>Co-Convener </td>
+                                <td>7620558850</td>
+                        </tr>
+                        <tr>
+                                <td> Sachin Udas</td>
+                                <td>Group A Co-ordinator</td>
+                                <td>9923355994</td>
+                        </tr>
+                        <tr>
+                                <td>Vipul Bankar</td>
+                                <td>Group B Co-ordinator</td>
+                                <td>8087367115</td>
+                        </tr>
+                        <tr>
+                                <td>Rushikesh Potale</td>
+                                <td>Hospitality<br/>(Boys)</td>
+                                <td>8421314411</td>
+                        </tr>
+                        <tr>
+                                <td>Anuja Momle</td>
+                                <td>Hospitality<br/>(Girls)</td>
+                                <td>9168234344</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="columnHalfContactUs" id="doNotDisplay">
+                    
+                                    <div class="row_one">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7457468286448!2d75.54658771493219!3d21.002826586012358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fc9945a06b3%3A0x2adbed89161ccac2!2sGovernment+College+of+Engineering!5e0!3m2!1sen!2sin!4v1506286742665" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="row_two">
+                                        <h1>Address :</h1> 
+                                        <h2>Opp. DIC office, National Highway 6, Jalgoan 425002</h2>
+                                        <h3>Email : contact.technovision@gcoej.ac.in</h3>
+                                    </div>
+                        </div> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+         
+           
+             
+         
+     
+     </div>
+
+    <div id="rellax" class="">
+            <div class="blindUp">
+                
+            </div>
+            <div id="countDownClock">
+                <div id="clockdiv">
+                    <div>
+                      <span class="days"></span>
+                      <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                      <span class="hours"></span>
+                      <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                      <span class="minutes"></span>
+                      <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                      <span class="seconds"></span>
+                      <div class="smalltext">Seconds</div>
+                    </div>
+                  </div>
+            </div>
+    </div>
+
+
+    
+    <div class="wrapper">
+        <div id="particles"></div>
+    
+        <div class="event_name_container">
+            <div class="event_name" >
+                    <h1 id="name">Technovision 2017</h1>
+                    <h3 id="subname">( A National Level Technical Paper Presentation Event )</h3>
+                    
+            </div>
+        </div>  
+    
+        <div class="event_description">
+            <div class="row">
+                <div class="col_3 col_org_sm">
+                    <div class="header">
+                        <div class="headerIcon">
+                            <i class=""><img src="img/college.png" id="collegeLogo"/></i>
+                        </div>
+                    </div>
+                    <div class="body" id="college_logo_below">
+                            <h1>Organised By</h1>
+                            <h2 >Government College Of Engineering, Jalgaon</h2>
+                    </div>
+                    
+                </div>
+                <div class="col_3 col_1_sm">
+                
+                        <div class="body" style="">
+                                
+                                <a href="#registration"><h2><button id="register_button">How To Register</button></h2></a>
+                                <a href="formats/rule_book.pdf" target="_blank"><h2><button id="register_button">Download Rules</button></h2></a>
+                                
+                        </div>
+                </div>
+                <div class="col_3 col_1_sm">
+                    <div class="header">
+                            <div class="headerIcon">
+                                <i class="fa fa-calendar"></i>
+                            </div>
+                        </div>
+                        <div class="body">
+                                <h2>On 12<sup>th</sup> October, 2017</h2>
+                                <h2><button id="register_button" onclick="showImportantDates()">Important Dates</button></h2>                                
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content_area" id="content_area">
+            <div class="about_technovision" id="about">
+                    <div class="header">
+                        <h1> About<span class="blue_color"> Technovision</span></h1>
+                    </div>
+                    <div class="rules_and_regulation_block about_gcoej_text">
+                            <p>
+                                TECHNOVISION is a national level paper presentation competition conducted by Govt. College Of Engineering, Jalgaon. 
+                                Conceptualized in 2015,
+                                Technovision provides a platform to students pursuing engineering studies to showcase their technical research and 
+                                presentation skills on a national stage. 
+
+
+                            </p>
+                    </div>
+            </div>
+            <div class="about_technovision">
+                    <div class="header" >
+                        <h1> About<span class="blue_color"> GCOEJ</span></h1>
+                    </div>
+                    <div class="rules_and_regulation_block about_gcoej_text" >
+                        <p>Government College Of Engineering, Jalgaon is an autonomous institute of Government of Maharashtra. 
+                            It is one of the well-known college of the region.
+
+                            It is the only autonomous institute of engineering in the 
+                            
+                            North Maharashtra University
+                            <br/>
+                            <b>Vision : </b> "Globally Accepted Engineers with Human Skills"
+                        </p>
+                        <div class="buttons" >
+                            <a href="http://gcoej.ac.in" target="_blank" style="margin:0 auto"><button id="format">College Website</button></a>
+                        </div>
+                        <a name="rulesfromotherpage"></a>
+                        <div id="rules"></div>
+                    </div >
+                    
+
+                    
+            </div>
+        
+        <div class="about_technovision"  >
+            <div class="header" >
+                <h1> Rules and<span class="blue_color"> Regulations</span></h1>
+            </div>
+            <div class="rules_and_regulation_block" >
+                
+                
+                <ol>
+                    <li >Eligibility of participation and submitting paper shall be from Engg. stream diploma, UG & PG of all branches.</li>    
+                    <li>Maximum 3 authors are allowed per Paper. </li>
+                    <li>Theme of the paper shall be technology based and it is not limited to themes mentioned on the poster.</li>
+                    <li><b>Abstract should not exceed one page and complete paper should not exceed 10 pages. </b>
+                    <br/>Paper should be in IEEE format.</li>
+                    <ul style="margin-left:50px;">
+                            <li >Two column format </li>
+                            <li >Font style: Times New Roman</li>
+                            <li >Font Size: 12</li>
+                            <li >Heading: Bold & font size: 14</li>
+                            <li> Spacing: 1.5</li>
+
+                    </ul>
+                    <li>Paper must be preceded by a cover page specifying the title of the paper, names of authors, their college names and their contact numbers with email id. <a href="formats/cover_template.docx" target="_blank"> Cover Page Template</a></li>
+                    <li>Paper submitted should be strictly in PDF Format. Please bring your Powerpoint presentation in a pen drive.</li>
+                    <li>Papers without payment of processing fees will not be considered and entertained.</li>
+                    <li id="rulesEmail" >Last Date of submission of ABSTRACT of paper to be submit along with processing fees receipt scan/photo on registered email is till 3:00 PM on 
+                            <b>06th OCTOBER 2017</b>. <i>(Extended Upto 7<sup>th</sup> October 2017 till 14:00 IST )</i></li>
+                    <li>Email for submission : <b><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact.technovision@gcoej.ac.in&su=ABSTRACT/PAPER FOR TECHNOVISION 2K17&body=BODY" target="_blank"> contact.technovision@gcoej.ac.in </a></b></li>
+                    <li>The mail should contain :</li>
+                    <ul style="margin-left:50px;">
+                            <li>Subject of Email : " ABSTRACT/PAPER FOR TECHNOVISION 2K17 " </li>
+                            <li>SCAN/PHOTO COPY OF PROCESSING FEES RECEIPT.</li>
+                            <li>Title : Theme of paper</li>
+                            <li>Name(s) of author(s).</li>
+                            <li>Phone number of all author(s)</li>
+                            <li>College Name</li>
+
+                    </ul>
+                    <li>Final list of shortlisted papers will be displayed on website by <b>09 October 2017</b></li>
+                    <li>Participant required to produce college I-Card & processing fee receipt at the time of event.</li>
+                    <li>All teams and their respective members should report the registration desk before <b>8.00 am</b> on day of event. Submit<b> 3 hard copies </b> of the shortlisted paper on the day of the event at registration desk.</li>
+                    <li>The teams will get <b> 8 minutes for presentation and 2 minutes for conclusion</b> followed by a Q&A session.</li>
+                </ol>
+
+                <div class="buttons rules_button">
+                    <button id="extra_rules_buttons_ta"class="" onclick="settaRules()">Travelling Allowance Rules</button>
+                    <button id="extra_rules_buttons_ac" onclick="setaccomodationRules()">Hospitality Related Info</button>
+                </div>
+
+                <div class="ta_rules" id="ta_rules">
+                    
+                    <ol>
+                        <li>One side Fare for OUT of North Maharashtra University Participant.</li>
+                        <li>To & fro fare for OUT of Maharashtra Participant.</li>
+                        <li>Participants will be paid fare of only Railway sleeper class (SL II) and State transport Bus. Fare for any other mode of transport shall be entitled as per government institution norms and regulations.</li>
+                        <li>Railway fare will be calculate from nearest Railway station of Participant's College to Jalgaon Railway station.</li>
+                        <li>State transport bus fare will be calculated from nearest bus depot of Participant's College to Jalgaon bus depot.</li>
+                        <li>Participant has to produce original travel ticket without which no fare will be pay.</li>
+                        <li>All rights reserved with organising committee.</li>
+                    
+                    </ol>
+                
+                </div>                
+                <div class="accomadation_rules" id="accomodation_rules">
+                    <ol>
+                            
+                            <li>Accomadation will be provided during TECHNOVISION 2k17 in college campus. </li>
+                            
+                            <li>Accommodation will be on first come first serve rule and shared basis. </li>
+                            <li>Accommodation will be provided from <b> 18:00 on 11-10-2017 to 18:00 on 12-10-2017 </b>.</li>
+                            <li>Hospitality will include accommodation in student hostel, dinner on 11th October 2017.</li>
+                            <li>A nominal fees of Rs. 150/- will be charged for hospitality.</li>
+                            <li>Produce college ID, valid Govt. ID Proof, print out of confirmatory email.</li>
+                            <li>Participants will have to strictly follow GCOE,Jalgaon hostel rules.</li>
+                            <li>Any nuisance from any participant will lead to disqualification of that team from TECHNOVISION.</li>
+                            <li>For queries related to hospitality please contact : Rushikesh Potale (+91 8421314411)</li>
+                        </ol>
+                </div>
+                <div class="buttons" id="registration" >
+                    
+                    <a href="formats/IEEE_format.docx"><button id="format">IEEE Paper Template</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="registration_process" >
+                <div class="header">
+                    <h1> Registration <span class="blue_color">Process</span></h1>
+                </div>
+                <div class="registration_process_block">
+                    <ol>
+                            <li>Send your Abstract/Full length Paper and Scanned copy of Receipt along with details as mentioned in <a href="#rulesEmail">General Rules</a> on the E-mail <b> contact.technovision@gcoej.ac.in</b></li>
+                            
+                
+                            <li>After acceptance of abstract, Pay the registration of Rs. 300 /- (Non Refundable)</li>
+                
+                
+                            <li>Fees can be paid online at details given below,</li>
+                            
+                            <ul>
+                                <li><b>" Principal Government College Of Engineering, Jalgaon "</b></li>
+                                <li><b>Bank Name: State Bank Of India, Jalgaon</b></li>
+                                <li><b>A/c No. : 30412214004</b></li>
+                                <li><b>IFSC No. : SBIN0000393</b></li>
+                            </ul>
+                            <li>Important dates</li>
+                            <ul>
+                                <li> Full length paper submission : <b>6th October,2017</b></li>
+                                <li> Acceptance, revision & Notification :<b> 09th October,2017</b></li>
+                                <li> Display of Presentation schedule : <b>10th October,2017</b></li>
+                            </ul>
+                        </ol>
+                    <div class="buttons">
+                        
+                        <button id="contact" onclick="showContactUs()">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="patrons">
+                <div class="section">
+                    <!--   Chief Patron Section   -->
+                    <div class="row center">
+                        <div class="header">
+                                <h1> Chief<span class="blue_color"> Patrons</span></h1>
+                        </div>
+                        <div class="col s12 m5 offset-m1">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/meeta_rajivlochan.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title" style="min-width:200px">Hon. Meeta Rajivlochan</span>
+                                    <p>Director, <br>Technical Education, Mumbai.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m5 offset-m0">
+                            <div class="card">
+                            <div class="card-image">
+                              <img src="img/ab_jain.png">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title">Honorable A. B. Jain</span>
+                              <p>Chairman, BoM <br> Govt. College of Engg. , Jalgaon.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <br><br>
+                      <!--   Patron Section   -->
+                      <div class="row center" >
+                            <div class="header">
+                                <h1> Pat<span class="blue_color">rons</span></h1>
+                            </div>
+                            <div class="col s12 m5 offset-m1">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/dp_nathe.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title">Shri. D. P. Nathe</span>
+                                        <p>Joint Director,<br> Technical Education, R. O. Nashik.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m5 offset-m0">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/rp_borkar.png">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title">Dr. R. P. Borkar</span>
+                                        <p>Principal, <br> Govt. College of Engg., Jalgaon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                      <br><br>
+                      <!--  Faculty Section   -->
+                      <div class="row center">
+                            <div class="header">
+                                    <h1> Faculty<span class="blue_color"> Incharge</span></h1>
+                            </div>
+                        <div class="col s12 m5 offset-m1">
+                            <div class="card">
+                            <div class="card-image">
+                              <img src="img/mj_sable.png">
+                            </div>
+                            <div class="card-content" style="margin-top:-20px">
+                              <span class="card-title">Dr. M. J. Sable</span>
+                              <p>Faculty Convener, <br> Prof. & Head of Dept (Mech).</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col s12 m4 offset-m0">
+                            <div class="card">
+                            <div class="card-image">
+                              <img src="img/wanisir1.jpg">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title">Prof. S. M. Wani</span>
+                              <p>Faculty Co-convener, <br> Asst.Professor (Mech).</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+
+
+            
+
+
+
+
+                
+                 <footer>
+                    <h1><a href='http://www.hit-counter-html-code.com'><img src='http://hit-counter-html-code.com/wp-content/themes/customizr/hitcounter/c.php?d=5&id=162769&s=18' border='0' title='Web Design Orange County'></a></h1>
+      				<h1>Made with <i class="fa fa-heart" style="color:#ff2121"></i> By ,<span class="sdclogo" onclick="window.open('http://sdc.gcoej.ac.in');"> Software Development Cell, GCOEJ </span></h1> 
+				    <h1>Ankush, Bhushan, Rizwan & Sujit</h1> 
+                    
+
+
+    		    </footer>
+                
+                
+                
+            
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles.app.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax();
+
+        $(document).ready(function(){
+
+           
+
+
+            $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        } ,1500,function(){
+                        window.location.hash = hash;
+                        });
+                    }
+            });
+        });
+        wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+        );
+        wow.init();
+        
+    </script>
+    <script>
+        $(document).ready(function() {
+            
+            $('div#loader').fadeOut(2000);
+            var bodyHeight;
+            function reloader() {
+               bodyHeight = $('body').height();
+                $('#content_area').css("marginTop",bodyHeight);
+            }
+            reloader();
+            $(window).resize(reloader);
+            $(window).bind("scroll",function() {
+               
+
+                if($(window).scrollTop() > bodyHeight-100) {
+                    $('header').css("backgroundColor","#222");
+                    $('#topLogoTechnovision').css('display','inline-block');
+                    $('#topLogoTechnovision').css('opacity','1');
+                    
+                    $('#topLogoTechnovision').css('zIndex',"10");
+                    
+                }
+                else if($(window).scrollTop() < bodyHeight-50) {
+                    $('header').css("backgroundColor","transparent");
+                    $('#topLogoTechnovision').css('opacity','0');
+                    
+                    $('#topLogoTechnovision').css('display','none');
+
+                 }
+                 if($(window).scrollTop() > 1100) {
+                     $('#home').removeClass("active");
+                     $('#rules_menu').addClass("active");
+                 }
+                 else {
+                     $('#rules_menu').removeClass("active");
+                    $('#home').addClass("active");
+                    }
+            });
+            
+        });
+       
+
+   
+    </script>
+    <script >
+        
+          //smooth scrolling effect for anchor tag
+        
+          $(document).ready(function(){
+            $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              } ,1000,function(){
+              window.location.hash = hash;
+              });
+            }
+            });
+
+            $('#ta_rules').css('display',"none");
+            $('#accomodation_rules').css('display',"none");
+
+
+
+
+
+
+
+            
+          });
+    </script>
+
+    <script src="js/clockCount.js"></script>
+    <script src="js/functions_included.js">
+    
+    </script>
+</body>
+</html> 
